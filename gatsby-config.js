@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: `InukRy - Software Developer`,
+    description: `Personal portfolio of Software Developer - Marcin Inuk Ryjewsky`,
+    author: `@ryjewsky`,
+  },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
@@ -10,9 +15,16 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
-  ],
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `db`,
+        path: `${__dirname}/src/db`,
+      },
+    }
+  ]
 };
