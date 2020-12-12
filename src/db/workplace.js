@@ -28,21 +28,28 @@ export const workspace = [
   {
     header_main: "Studying at Salt",
     paragraph_main_one:
-      "I had the opportunity join amazing Salt school in Sweden, a premium school for developers. This was an amazing experience where I was able to study and explore new coding concepts alongside best qualified teachers",
+      "I had the opportunity to be chosen for student program at Salt in Sweden. During my time as a student I had opportunity to improve my skills and also to expend my knowledge in Computer Science subject.",
     paragraph_main_two:
-      "Throughout this time I was pushed and challenged in every aspect of my skills and walked away as a much more refined developer.",
+      "Thankfully to excellent teaching crew I had occasion to challenge myself with advanced topic like Databases, Design, Frontend technologies, Backend technologies and much more.",
     img_me: "",
     header_goal: "Goal of School",
-    paragraph_goal_one: "",
-    paragraph_goal_two: "",
+    paragraph_goal_one:
+      "My main goal which I set personally for myself was to improve skills as a Backend developer and expand knowledge in fields like Databases management etc.",
+    paragraph_goal_two:
+      "Also another goal which I put on end line was to immerse myself as a team player with random mob group. I wanted to understand basic mob team strategies and way to approaching the problem which is little different than regular team work",
     img_stack: "",
     header_challenges: "Personal Challenges and Growth",
-    paragraph_challenges_one: "",
-    paragraph_challenges_two: "",
+    paragraph_challenges_one:
+      "My time dedicated to Salt was the most challenging and rewarding. After 16 weeks I feel like I learned so much about myself like also I got some extra baggage of knowledge and deeper understanding of agile type of work.",
+    paragraph_challenges_two:
+      "At Salt I learned a ton about technologies like: React, Redux, NodeJS, Express, GraphQL, PostgreSQL, MongoDB, AWS, Docker and much more, you name it, but also I gain deeper understanding of agile type of work and working in team.",
     img_interiors: "",
     header_contribution: "My Contributions",
-    paragraph_contribution_one: "",
+    paragraph_contribution_one:
+      "During time at Salt we had occasion to challenge ourself almost everyday, but I can point two major events which changed way of thinking of mine. First one was a Hackathon where I was able to build random product on my own within time frame and Final project which we build in period of 10 days with my team.",
+    paragraph_contribution_two: "here you can read about this projects:",
     header_overview: "Overview",
-    paragraph_overview: "",
+    paragraph_overview:
+      "My experience at Salt will be something I remember forever. I want to thank everyone at Salt for the time they took teaching me so many new lessons and giving me such an amazing experience.",
   },
 ];
