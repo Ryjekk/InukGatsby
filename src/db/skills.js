@@ -7,7 +7,7 @@ export const skills = [
       core: ['HTML & CSS', 'Javascript with ES6'],
       frameworks: [
         'React /w Redux',
-        'NextJS <<< ?',
+        'NextJS',
         'Gatsby',
         'VueJS',
         'Vuetify',
@@ -22,7 +22,21 @@ export const skills = [
         'Tailwind CSS'
       ],
       databases: ['MongoDB', 'Mongoose', 'PostgreSQL', 'FaunaDB'],
-      tools: ['Git', 'Docker', 'Webpack', 'Mocha/Chai/Jest', 'Cloud Platforms']
+      tools: [
+        'Git',
+        'Docker',
+        'Webpack',
+        'Mocha/Chai/Jest',
+        'AWS',
+        'Netlify',
+        'Heroku',
+        'Firebase',
+        'Figma',
+        'Adobe XD',
+        'Pug',
+        'Handlebars',
+        'Moustache'
+      ]
     }
   }
 ];
