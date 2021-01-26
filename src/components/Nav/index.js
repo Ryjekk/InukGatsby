@@ -2,7 +2,9 @@ import React from 'react';
 // Style
 import { Inner } from '../../styles/styles';
 import { NavContent } from './styles';
+// Components
 import Switcher from './Switcher';
+import Logo from './Logo';
 
 const Nav = ({ toggleTheme, theme, spread }) => {
   return (
@@ -16,6 +18,14 @@ const Nav = ({ toggleTheme, theme, spread }) => {
           mixBlendMode: 'difference'
         }}
       >
+        <Logo
+          theme={theme}
+          style={{
+            position: 'relative',
+            display: 'block',
+            zIndex: 2
+          }}
+        />
         <Switcher spread={spread} theme={theme} toggleTheme={toggleTheme} />
       </NavContent>
     </Inner>
