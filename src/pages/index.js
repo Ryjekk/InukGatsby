@@ -5,24 +5,11 @@ import { ThemeProvider } from 'styled-components';
 import lightMode, { darkMode } from '../styles/themeContext';
 // Components
 import Layout from '../components/Layout';
+// Hook
+import { useDarkMode } from '../hooks/useDarkMode';
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
-  const [bg, setBg] = useState(false);
-
-  function toggleTheme() {
-    if (theme === 'light') {
-      setBg('first');
-      setTimeout(() => {
-        setTheme('dark');
-      }, 2000);
-    } else {
-      setBg('second');
-      setTimeout(() => {
-        setTheme('light');
-      }, 2000);
-    }
-  }
+  const [theme, bg, toggleTheme] = useDarkMode();
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
