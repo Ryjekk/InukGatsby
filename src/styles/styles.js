@@ -1,55 +1,41 @@
-import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
+import { bgBlackAnimation, bgWhiteAnimation } from './animations';
 
-const GlobalStyles = createGlobalStyle`
-// droid-sans-mono 400
-@import url('https://use.typekit.net/eyl0czw.css'); 
-// bebas-neue-by-fontfabric 100,200,300,400,700
-@import url('https://use.typekit.net/eyl0czw.css'); 
-  * {
-    border: 0;
-    box-sizing: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    text-decoration: none; 
-    text-rendering: optimizeLegibility;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    z-index: 99;
-    position:relative;
+const QUERIES = {
+  large: `min-width: 1200px`,
+  medium: `min-width: 870px`,
+  small: `min-width: 660px`,
+  maxWidth: `1500px`
+};
+
+export const Main = styled.main`
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.main};
+  overflow: hidden;
+
+  > .growBlack {
+    animation: ${bgBlackAnimation} 2s forwards;
   }
-  html {
-    display: flex;
-    min-height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    font-family: 'droid-sans-mono', 'bebas-neue-by-fontfabric', monospace;
-  }
-  
-  body {
-    background: ${({ theme }) => theme.main};
-    color: ${({ theme }) => theme.heading};
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    overscroll-behavior-y: none;
-    -webkit-overflow-scrolling: touch;
-    font-family: 'droid-sans-mono', 'bebas-neue-by-fontfabric', monospace;
-  }
-  
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
-  a:hover {
-    cursor: pointer;
+
+  > .growWhite {
+    animation: ${bgWhiteAnimation} 2s forwards;
   }
 `;
 
-export default GlobalStyles;
+export const Inner = styled.div`
+  max-width: 1437px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    width: 100%;
+  }
+`;
+
+export default QUERIES;
