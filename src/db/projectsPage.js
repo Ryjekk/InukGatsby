@@ -271,5 +271,35 @@ export const projectsPage = [
     header_lesson: 'Lesson Learned',
     paragraph_lesson:
       'During the process of creating my portfolio I definitely got better grasp over VueJS concept. As a future improvements I could see to move and separate all data and place them as an API'
+  },
+  {
+    header: 'RePack Battery Cloud',
+    paragraph: '',
+    table: {
+      type: '',
+      stack: [],
+      code: {
+        text: '',
+        link: ''
+      },
+      live: {
+        text: '',
+        link: ''
+      }
+    },
+    img_project_one: '',
+    header_goal: '',
+    paragraph_goal_one: '',
+    paragraph_goal_two: '',
+    header_explanation: '',
+    paragraph_explanation_one: '',
+    paragraph_explanation_two: '',
+    img_badges: '',
+    img_project_overall: '',
+    header_problems: '',
+    paragraph_problems: '',
+    img_project_two: '',
+    header_lesson: '',
+    paragraph_lesson: ''
   }
 ];
