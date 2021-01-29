@@ -7,6 +7,7 @@ import Nav from '../Nav';
 import ProjectContent from '../Content/ProjectContent';
 import WorkContent from '../Content/WorkContent';
 import Content from '../Content';
+import Footer from '../Footer';
 
 const Layout = ({ toggleTheme, theme, bg, contentType }) => {
   return (
@@ -24,6 +25,7 @@ const Layout = ({ toggleTheme, theme, bg, contentType }) => {
       ) : (
         <Content />
       )}
+      <Footer />
     </Main>
   );
 };
