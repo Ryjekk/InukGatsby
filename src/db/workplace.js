@@ -51,5 +51,23 @@ export const workspace = [
     header_overview: 'Overview',
     paragraph_overview:
       'My experience at Salt will be something I remember forever. I want to thank everyone at Salt for the time they took teaching me so many new lessons and giving me such an amazing experience.'
+  },
+  {
+    header_main: 'Working for RePack',
+    paragraph_main_one: '',
+    paragraph_main_two: '',
+    img_me: '',
+    header_goal: '',
+    paragraph_goal_one: '',
+    paragraph_goal_two: '',
+    img_stack: '',
+    header_challenges: '',
+    paragraph_challenges_one: '',
+    paragraph_challenges_two: '',
+    img_interiors: '',
+    header_contribution: '',
+    paragraph_contribution_one: '',
+    header_overview: '',
+    paragraph_overview: ''
   }
 ];
