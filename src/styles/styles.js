@@ -51,6 +51,19 @@ export const Inner = styled.div`
   }
 `;
 
+export const Mid = styled.div`
+  width: 100%;
+  height: auto;
+  margin: 70px auto 70px auto;
+  padding: 30px;
+  max-width: 1090px;
+
+  @media (${QUERIES.large}) {
+    margin: 220px auto 220px auto;
+    padding: 0px;
+  }
+`;
+
 // Text
 export const Heading = styled.h1`
   font-size: 30px;
@@ -75,6 +88,19 @@ export const Paragraph = styled.p`
 
   @media (${QUERIES.large}) {
     font-size: 25px;
+  }
+`;
+
+// Other
+export const Image = styled.div`
+  width: 100%;
+  height: 500px;
+  border-radius: 0px;
+  background-position: center center;
+  background-size: cover;
+
+  @media (${QUERIES.large}) {
+    border-radius: 6px;
   }
 `;
 
