@@ -5,6 +5,7 @@ import { Full, Heading, Image, Inner, Mid } from '../../styles/styles';
 import bg1 from '../../images/projects/Aura/pic_desktop_one.png';
 // Components
 import Columns from '../Columns';
+import Skills from '../Skills';
 
 const Content = ({ theme }) => {
   return (
@@ -36,6 +37,7 @@ const Content = ({ theme }) => {
           headingContent="My Skills"
           leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         />
+        <Skills />
       </Inner>
     </>
   );
