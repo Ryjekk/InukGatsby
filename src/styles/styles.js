@@ -8,6 +8,7 @@ const QUERIES = {
   maxWidth: `1500px`
 };
 
+// Boxes
 export const Main = styled.main`
   width: 100%;
   height: 100%;
@@ -23,6 +24,18 @@ export const Main = styled.main`
   }
 `;
 
+export const Full = styled.main`
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @media (${QUERIES.large}) {
+    padding: 30px;
+  }
+`;
+
 export const Inner = styled.div`
   max-width: 1437px;
   width: 100%;
@@ -35,6 +48,33 @@ export const Inner = styled.div`
 
   > * {
     width: 100%;
+  }
+`;
+
+// Text
+export const Heading = styled.h1`
+  font-size: 30px;
+  line-height: 129.69%;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 100%;
+  color: ${({ theme }) => theme.textMain};
+  user-select: none;
+
+  @media (${QUERIES.large}) {
+    font-size: 60px;
+  }
+`;
+
+export const Paragraph = styled.p`
+  font-size: 20px;
+  line-height: 184.69%;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: ${({ theme }) => theme.textMain};
+
+  @media (${QUERIES.large}) {
+    font-size: 25px;
   }
 `;
 
