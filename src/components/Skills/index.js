@@ -1,48 +1,70 @@
 import React from 'react';
-// Assets
-import {
-  Html5,
-  Bootstrap,
-  Css3,
-  Figma,
-  Firebase,
-  Git,
-  Github,
-  Javascript,
-  Jquery,
-  Nodejs,
-  ReactLogo,
-  Redux,
-  Sass,
-  Vuejs
-} from '@styled-icons/boxicons-logos/';
 
-import {
-  NextDotJs,
-  Adobexd,
-  Amazonaws,
-  Gatsby,
-  Vuetify,
-  NuxtDotJs,
-  Express,
-  Graphql,
-  StyledComponents,
-  MaterialUi,
-  Tailwindcss,
-  Mongodb,
-  Postgresql,
-  Docker,
-  Webpack,
-  Mocha,
-  Jest,
-  Netlify,
-  Heroku
-} from '@styled-icons/simple-icons/';
+// Styles
+import { SkillsWrapper, HeadingSkills } from './styles';
+import { ColumnsWrapper, LeftContent, RightContent } from '../Columns/styles';
+// Components
+import Skill from './Skill';
 
-// TODO missing pug moustache, handlebars, faunaDB, chai, mongoose
+// TODO missing pug moustache, handlebars, chai, mongoose
 
-const Skills = () => {
-  return <div>skills gallery</div>;
+const Skills = ({ theme }) => {
+  const core = ['Html5', 'Css3', 'Javascript'];
+  const front = [
+    'ReactLogo',
+    'Redux',
+    'NextDotJs',
+    'Gatsby',
+    'Vuejs',
+    'Vuetify',
+    'NuxtDotJs',
+    'Jquery'
+  ];
+  const back = ['Nodejs', 'Express', 'Graphql'];
+  const styling = [
+    'Sass',
+    'StyledComponents',
+    'MaterialUi',
+    'Tailwindcss',
+    'Bootstrap'
+  ];
+  const database = ['Mongodb', 'Postgresql', 'FaunaDB'];
+  const tools = [
+    'Git',
+    'Github',
+    'Mocha',
+    'Jest',
+    'Docker',
+    'Webpack',
+    'Firebase',
+    'Amazonaws',
+    'Netlify',
+    'Heroku',
+    'Figma',
+    'Adobexd'
+  ];
+  return (
+    <SkillsWrapper>
+      <ColumnsWrapper>
+        <LeftContent style={{ alignSelf: 'flex-start' }}>
+          <HeadingSkills>Core</HeadingSkills>
+          <Skill desc={core} />
+          <HeadingSkills>Databases</HeadingSkills>
+          <Skill desc={database} theme={theme} />
+          <HeadingSkills>Tools</HeadingSkills>
+          <Skill desc={tools} />
+        </LeftContent>
+        <RightContent style={{ alignSelf: 'flex-start' }}>
+          <HeadingSkills>Backend</HeadingSkills>
+          <Skill desc={back} />
+          <HeadingSkills>Frontend</HeadingSkills>
+          <Skill desc={front} />
+          <HeadingSkills>Styling</HeadingSkills>
+          <Skill desc={styling} />
+        </RightContent>
+      </ColumnsWrapper>
+    </SkillsWrapper>
+  );
 };
 
 export default Skills;
