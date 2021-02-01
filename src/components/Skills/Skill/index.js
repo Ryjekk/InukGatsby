@@ -1,7 +1,7 @@
 import React from 'react';
 // Styles
-import { BoxCol, SkillWrapper } from './styles';
-import { Paragraph } from '../../../styles/styles';
+import { BoxCol } from './styles';
+import { Paragraph, WrapperContent } from '../../../styles/styles';
 // Assets
 import {
   Html5,
@@ -306,9 +306,9 @@ const Skill = ({ desc, theme }) => {
   });
 
   return (
-    <SkillWrapper style={{ maxWidth: '550px', paddingRight: '50px' }}>
+    <WrapperContent style={{ maxWidth: '550px', paddingRight: '50px' }}>
       {perk}
-    </SkillWrapper>
+    </WrapperContent>
   );
 };
 

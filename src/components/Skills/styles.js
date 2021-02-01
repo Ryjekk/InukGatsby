@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const SkillsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const HeadingSkills = styled.p`
   width: auto;
   margin-left: 0;

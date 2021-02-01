@@ -8,6 +8,33 @@ const QUERIES = {
   maxWidth: `1500px`
 };
 
+// Text
+export const Heading = styled.h1`
+  font-size: 30px;
+  line-height: 129.69%;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 100%;
+  color: ${({ theme }) => theme.textMain};
+  user-select: none;
+
+  @media (${QUERIES.large}) {
+    font-size: 60px;
+  }
+`;
+
+export const Paragraph = styled.p`
+  font-size: 20px;
+  line-height: 184.69%;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: ${({ theme }) => theme.textMain};
+
+  @media (${QUERIES.large}) {
+    font-size: 25px;
+  }
+`;
+
 // Boxes
 export const Main = styled.main`
   width: 100%;
@@ -64,30 +91,31 @@ export const Mid = styled.div`
   }
 `;
 
-// Text
-export const Heading = styled.h1`
-  font-size: 30px;
-  line-height: 129.69%;
-  font-weight: 600;
-  margin: 0 auto;
-  width: 100%;
-  color: ${({ theme }) => theme.textMain};
-  user-select: none;
+export const WrapperMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+`;
 
-  @media (${QUERIES.large}) {
-    font-size: 60px;
+export const WrapperContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0;
+
+  ${Paragraph} {
+    font-size: 14px;
+    color: ${({ theme }) => theme.textLight};
   }
 `;
 
-export const Paragraph = styled.p`
+export const LocalLink = styled.p`
   font-size: 20px;
-  line-height: 184.69%;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  color: ${({ theme }) => theme.textMain};
-
-  @media (${QUERIES.large}) {
-    font-size: 25px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  :hover {
+    border-bottom: 3px solid ${({ theme }) => theme.textMain};
   }
 `;
 

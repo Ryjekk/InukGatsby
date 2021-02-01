@@ -1,10 +1,10 @@
 import React from 'react';
-
 // Styles
-import { SkillsWrapper, HeadingSkills } from './styles';
+import { HeadingSkills } from './styles';
 import { ColumnsWrapper, LeftContent, RightContent } from '../Columns/styles';
 // Components
 import Skill from './Skill';
+import { WrapperMain } from '../../styles/styles';
 
 // TODO missing pug moustache, handlebars, chai, mongoose
 
@@ -44,7 +44,7 @@ const Skills = ({ theme }) => {
     'Adobexd'
   ];
   return (
-    <SkillsWrapper>
+    <WrapperMain>
       <ColumnsWrapper>
         <LeftContent style={{ alignSelf: 'flex-start' }}>
           <HeadingSkills>Core</HeadingSkills>
@@ -63,7 +63,7 @@ const Skills = ({ theme }) => {
           <Skill desc={styling} />
         </RightContent>
       </ColumnsWrapper>
-    </SkillsWrapper>
+    </WrapperMain>
   );
 };
 
