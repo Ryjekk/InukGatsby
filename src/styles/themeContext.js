@@ -1,5 +1,6 @@
 const lightMode = {
   main: '#EEEEEE',
+  secondary: '#b7162e',
   inverse: '#121212',
   alt: '#F4F4F4',
   altWhite: '#FFFFFF',
@@ -13,6 +14,7 @@ const lightMode = {
 
 export const darkMode = {
   main: '#121212',
+  secondary: '#DE8D14',
   inverse: '#EEEEEE',
   heading: '#EEEEEE',
   alt: '#201E26',
