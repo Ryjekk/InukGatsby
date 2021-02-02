@@ -9,21 +9,19 @@ const Cards = () => {
     <WrapperMain>
       <ColumnsWrapper>
         <LeftContent style={{ alignSelf: 'flex-start' }}>
-          left 1
           <Card
-            title="placeholder title"
-            desc="placeholder desc"
+            title="AuraTattoo"
+            desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
             link="link To"
-            image="image"
+            image="Aura"
           />
         </LeftContent>
-        <RightContent style={{ alignSelf: 'flex-start' }}>
-          Right 1
+        <RightContent style={{ alignSelf: 'flex-start', paddingLeft: '50px' }}>
           <Card
-            title="placeholder title"
-            desc="placeholder desc"
+            title="RePack"
+            desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
             link="link To"
-            image="image"
+            image="Repack"
           />
         </RightContent>
       </ColumnsWrapper>

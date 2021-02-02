@@ -24,15 +24,21 @@ export const Heading = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   line-height: 184.69%;
   letter-spacing: 0.03em;
   font-weight: 400;
-  color: ${({ theme }) => theme.textMain};
+  color: ${({ theme }) => theme.textLight};
+`;
 
-  @media (${QUERIES.large}) {
-    font-size: 25px;
-  }
+export const Subheading = styled.p`
+  width: auto;
+  margin-left: 0;
+  font-size: 24px;
+  letter-spacing: 4px;
+  border-bottom: 1px solid ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.secondary};
+  display: inline;
 `;
 
 // Boxes
@@ -105,6 +111,7 @@ export const WrapperContent = styled.div`
 
   ${Paragraph} {
     font-size: 14px;
+    padding: 16px 0;
     color: ${({ theme }) => theme.textLight};
   }
 `;

@@ -7,12 +7,10 @@ const Columns = ({ leftContent, rightContent, headingContent }) => {
     <ColumnsWrapper style={{ alignItems: 'start' }}>
       {headingContent ? <Heading>{headingContent}</Heading> : ''}
       <LeftContent>
-        <Paragraph style={{ fontSize: 16, paddingRight: '50px' }}>
-          {leftContent}
-        </Paragraph>
+        <Paragraph>{leftContent}</Paragraph>
       </LeftContent>
       <RightContent>
-        <Paragraph style={{ fontSize: 16 }}>{rightContent}</Paragraph>
+        <Paragraph>{rightContent}</Paragraph>
       </RightContent>
     </ColumnsWrapper>
   );

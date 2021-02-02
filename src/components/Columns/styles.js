@@ -37,6 +37,7 @@ export const LeftContent = styled.div`
   padding-bottom: 20px;
 
   @media (${QUERIES.large}) {
+    padding-right: 50px;
     width: 50%;
   }
 `;
