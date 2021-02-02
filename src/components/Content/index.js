@@ -7,6 +7,8 @@ import bg1 from '../../images/projects/Aura/pic_desktop_one.png';
 import Columns from '../Columns';
 import Skills from '../Skills';
 import Cards from '../Cards';
+import CardLarge from '../Cards/CardLarge';
+import Card from '../Cards/Card';
 
 const Content = ({ theme }) => {
   return (
@@ -47,6 +49,12 @@ const Content = ({ theme }) => {
           leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         />
         <Cards />
+      </Inner>
+      <Inner>
+        <CardLarge
+          title="AuraTattoo"
+          desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
+        />
       </Inner>
     </>
   );

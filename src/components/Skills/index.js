@@ -46,7 +46,7 @@ const Skills = ({ theme }) => {
   return (
     <WrapperMain>
       <ColumnsWrapper>
-        <LeftContent style={{ alignSelf: 'flex-start' }}>
+        <LeftContent>
           <HeadingSkills>Core</HeadingSkills>
           <Skill desc={core} />
           <HeadingSkills>Databases</HeadingSkills>
@@ -54,7 +54,7 @@ const Skills = ({ theme }) => {
           <HeadingSkills>Tools</HeadingSkills>
           <Skill desc={tools} />
         </LeftContent>
-        <RightContent style={{ alignSelf: 'flex-start' }}>
+        <RightContent>
           <HeadingSkills>Backend</HeadingSkills>
           <Skill desc={back} />
           <HeadingSkills>Frontend</HeadingSkills>

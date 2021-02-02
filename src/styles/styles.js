@@ -32,8 +32,6 @@ export const Paragraph = styled.p`
 `;
 
 export const Subheading = styled.p`
-  width: auto;
-  margin-left: 0;
   font-size: 24px;
   letter-spacing: 4px;
   border-bottom: 1px solid ${({ theme }) => theme.secondary};
