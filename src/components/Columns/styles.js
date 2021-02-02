@@ -26,17 +26,21 @@ export const ColumnsWrapper = styled.div`
 
 export const RightContent = styled.div`
   width: 100%;
+  align-self: flex-start;
 
   @media (${QUERIES.large}) {
     width: 50%;
+    padding-left: 50px;
   }
 `;
 
 export const LeftContent = styled.div`
   width: 100%;
   padding-bottom: 20px;
+  align-self: flex-start;
 
   @media (${QUERIES.large}) {
+    padding-bottom: 0;
     padding-right: 50px;
     width: 50%;
   }

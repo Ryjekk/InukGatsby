@@ -8,7 +8,7 @@ const Cards = () => {
   return (
     <WrapperMain>
       <ColumnsWrapper>
-        <LeftContent style={{ alignSelf: 'flex-start' }}>
+        <LeftContent>
           <Card
             title="AuraTattoo"
             desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
@@ -16,7 +16,7 @@ const Cards = () => {
             image="Aura"
           />
         </LeftContent>
-        <RightContent style={{ alignSelf: 'flex-start', paddingLeft: '50px' }}>
+        <RightContent>
           <Card
             title="RePack"
             desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
