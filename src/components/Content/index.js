@@ -6,11 +6,12 @@ import bg1 from '../../images/projects/Aura/pic_desktop_one.png';
 // Components
 import Columns from '../Columns';
 import Skills from '../Skills';
+import Cards from '../Cards';
 
 const Content = ({ theme }) => {
   return (
     <>
-      <Mid style={{ mixBlendMode: 'difference', marginBottom: '100px' }}>
+      <Mid style={{ mixBlendMode: 'difference', marginBottom: '150px' }}>
         <Heading
           style={{
             mixBlendMode: 'difference',
@@ -31,13 +32,21 @@ const Content = ({ theme }) => {
           rightContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea"
         />
       </Inner>
-      <Inner style={{ margin: '100px auto' }}>
+      <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
           headingContent="My Skills"
           leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         />
         <Skills theme={theme} />
+      </Inner>
+      <Inner style={{ margin: '50px auto' }}>
+        <Columns
+          style={{ mixBlendMode: 'difference' }}
+          headingContent="Latest Projects"
+          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        />
+        <Cards />
       </Inner>
     </>
   );
