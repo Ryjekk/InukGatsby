@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// Context
+import { GlobalStateContext } from '../../context/DataContext';
 // Styles
 import { Full, Heading, Image, Inner, Mid } from '../../styles/styles';
 // Assets
@@ -8,9 +10,12 @@ import Columns from '../Columns';
 import Skills from '../Skills';
 import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
-import Card from '../Cards/Card';
 
 const Content = ({ theme }) => {
+  const { skills, welcome } = useContext(GlobalStateContext);
+  const { header, paragraph } = skills[0];
+  const { welcomeLeft, welcomeRight } = welcome[0];
+
   return (
     <>
       <Mid style={{ mixBlendMode: 'difference', marginBottom: '150px' }}>
@@ -30,17 +35,17 @@ const Content = ({ theme }) => {
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap"
-          rightContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea"
+          leftContent={welcomeLeft}
+          rightContent={welcomeRight}
         />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          headingContent="My Skills"
-          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+          headingContent={header}
+          leftContent={paragraph}
         />
-        <Skills theme={theme} />
+        <Skills theme={theme} skills={skills[0].skills} />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
@@ -55,6 +60,14 @@ const Content = ({ theme }) => {
           title="AuraTattoo"
           desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
         />
+      </Inner>
+      <Inner style={{ margin: '50px auto' }}>
+        <Columns
+          style={{ mixBlendMode: 'difference' }}
+          headingContent="Previous Work"
+          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+        />
+        <Cards />
       </Inner>
     </>
   );
