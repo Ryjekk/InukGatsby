@@ -11,14 +11,13 @@ import DataContextProvider from '../context/DataContext';
 
 const App = () => {
   const [theme, bg, toggleTheme] = useDarkMode();
-
   return (
-    <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
-      <GlobalStyles />
-      <DataContextProvider>
+    <DataContextProvider>
+      <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
+        <GlobalStyles />
         <Layout bg={bg} theme={theme} toggleTheme={toggleTheme} />
-      </DataContextProvider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </DataContextProvider>
   );
 };
 
