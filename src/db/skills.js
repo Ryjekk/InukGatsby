@@ -4,38 +4,39 @@ export const skills = [
     paragraph:
       "Thanks to my previous work experience and studies at Salt, I've gained a solid understanding of computer science and software development concepts. On my free time I am trying to apply all of this concepts to real-world scenarios and application.",
     skills: {
-      core: ['HTML & CSS', 'Javascript with ES6'],
-      frameworks: [
-        'React /w Redux',
-        'NextJS',
+      core: ['Html5', 'Css3', 'Javascript'],
+      frontend: [
+        'ReactLogo',
+        'Redux',
+        'NextDotJs',
         'Gatsby',
-        'VueJS',
+        'Vuejs',
         'Vuetify',
-        'NuxtJS'
+        'NuxtDotJs',
+        'Jquery'
       ],
-      backend: ['NodeJS', 'ExpressJS', 'GraphQL'],
-      styles: [
-        'SASS',
-        'Styled-components',
-        'Material UI',
-        'Bootstrap',
-        'Tailwind CSS'
+      backend: ['Nodejs', 'Express', 'Graphql'],
+      styling: [
+        'Sass',
+        'StyledComponents',
+        'MaterialUi',
+        'Tailwindcss',
+        'Bootstrap'
       ],
-      databases: ['MongoDB', 'Mongoose', 'PostgreSQL', 'FaunaDB'],
+      databases: ['Mongodb', 'Postgresql', 'FaunaDB'],
       tools: [
         'Git',
+        'Github',
+        'Mocha',
+        'Jest',
         'Docker',
         'Webpack',
-        'Mocha/Chai/Jest',
-        'AWS',
+        'Firebase',
+        'Amazonaws',
         'Netlify',
         'Heroku',
-        'Firebase',
         'Figma',
-        'Adobe XD',
-        'Pug',
-        'Handlebars',
-        'Moustache'
+        'Adobexd'
       ]
     }
   }

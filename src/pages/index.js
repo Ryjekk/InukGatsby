@@ -7,15 +7,17 @@ import lightMode, { darkMode } from '../styles/themeContext';
 import Layout from '../components/Layout';
 // Hook
 import { useDarkMode } from '../hooks/useDarkMode';
+import DataContextProvider from '../context/DataContext';
 
 const App = () => {
   const [theme, bg, toggleTheme] = useDarkMode();
-
   return (
-    <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
-      <GlobalStyles />
-      <Layout bg={bg} theme={theme} toggleTheme={toggleTheme} />
-    </ThemeProvider>
+    <DataContextProvider>
+      <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
+        <GlobalStyles />
+        <Layout bg={bg} theme={theme} toggleTheme={toggleTheme} />
+      </ThemeProvider>
+    </DataContextProvider>
   );
 };
 
