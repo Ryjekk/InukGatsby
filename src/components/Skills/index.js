@@ -8,58 +8,27 @@ import { WrapperMain } from '../../styles/styles';
 
 // TODO missing pug moustache, handlebars, chai, mongoose
 
-const Skills = ({ theme }) => {
-  const core = ['Html5', 'Css3', 'Javascript'];
-  const front = [
-    'ReactLogo',
-    'Redux',
-    'NextDotJs',
-    'Gatsby',
-    'Vuejs',
-    'Vuetify',
-    'NuxtDotJs',
-    'Jquery'
-  ];
-  const back = ['Nodejs', 'Express', 'Graphql'];
-  const styling = [
-    'Sass',
-    'StyledComponents',
-    'MaterialUi',
-    'Tailwindcss',
-    'Bootstrap'
-  ];
-  const database = ['Mongodb', 'Postgresql', 'FaunaDB'];
-  const tools = [
-    'Git',
-    'Github',
-    'Mocha',
-    'Jest',
-    'Docker',
-    'Webpack',
-    'Firebase',
-    'Amazonaws',
-    'Netlify',
-    'Heroku',
-    'Figma',
-    'Adobexd'
-  ];
+const Skills = ({ theme, skills }) => {
+  const { core, frontend, backend, styling, databases, tools } = skills;
+  const headers = Object.keys(skills);
+
   return (
     <WrapperMain>
       <ColumnsWrapper>
         <LeftContent>
-          <HeadingSkills>Core</HeadingSkills>
+          <HeadingSkills>{headers[0]}</HeadingSkills>
           <Skill desc={core} />
-          <HeadingSkills>Databases</HeadingSkills>
-          <Skill desc={database} theme={theme} />
-          <HeadingSkills>Tools</HeadingSkills>
+          <HeadingSkills>{headers[4]}</HeadingSkills>
+          <Skill desc={databases} theme={theme} />
+          <HeadingSkills>{headers[5]}</HeadingSkills>
           <Skill desc={tools} />
         </LeftContent>
         <RightContent>
-          <HeadingSkills>Backend</HeadingSkills>
-          <Skill desc={back} />
-          <HeadingSkills>Frontend</HeadingSkills>
-          <Skill desc={front} />
-          <HeadingSkills>Styling</HeadingSkills>
+          <HeadingSkills>{headers[2]}</HeadingSkills>
+          <Skill desc={backend} />
+          <HeadingSkills>{headers[1]}</HeadingSkills>
+          <Skill desc={frontend} />
+          <HeadingSkills>{headers[3]}</HeadingSkills>
           <Skill desc={styling} />
         </RightContent>
       </ColumnsWrapper>
