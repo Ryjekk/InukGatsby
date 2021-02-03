@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 // Context
-import { SkillsContext, WelcomeContext } from '../../context/DataContext';
+import { GlobalStateContext } from '../../context/DataContext';
 // Styles
 import { Full, Heading, Image, Inner, Mid } from '../../styles/styles';
 // Assets
@@ -12,10 +12,9 @@ import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
 
 const Content = ({ theme }) => {
-  const skills = useContext(SkillsContext).shift();
-  const welcome = useContext(WelcomeContext).shift();
-  const { header, paragraph } = skills;
-  const { welcomeLeft, welcomeRight } = welcome;
+  const { skills, welcome } = useContext(GlobalStateContext);
+  const { header, paragraph } = skills[0];
+  const { welcomeLeft, welcomeRight } = welcome[0];
 
   return (
     <>
@@ -46,7 +45,7 @@ const Content = ({ theme }) => {
           headingContent={header}
           leftContent={paragraph}
         />
-        <Skills theme={theme} skills={skills.skills} />
+        <Skills theme={theme} skills={skills[0].skills} />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
