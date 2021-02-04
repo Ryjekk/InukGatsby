@@ -11,8 +11,8 @@ import Skills from '../Skills';
 import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
 
-const Content = () => {
-  const { skills, welcome, theme } = useContext(GlobalStateContext);
+const Content = ({ theme }) => {
+  const { skills, welcome } = useContext(GlobalStateContext);
   const { header, paragraph, skills: skill } = skills[0];
   const { welcomeLeft, welcomeRight } = welcome[0];
 

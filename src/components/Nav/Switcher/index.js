@@ -4,22 +4,10 @@ import { SwitchBtn } from './styles';
 // Assets
 import lightIcon from '../../../images/icons/themeSwitchers/light-mode.svg';
 import darkIcon from '../../../images/icons/themeSwitchers/dark-mode.svg';
-// Context
-import {
-  GlobalStateContext,
-  GlobalDispatchContext
-} from '../../../context/DataContext';
 
-const Switcher = () => {
-  const { theme } = useContext(GlobalStateContext);
-  const dispatch = useContext(GlobalDispatchContext);
-
+const Switcher = ({ toggleTheme, theme }) => {
   return (
-    <SwitchBtn
-      onClick={() => {
-        dispatch({ type: 'TOGGLE_THEME' });
-      }}
-    >
+    <SwitchBtn onClick={toggleTheme}>
       {theme === 'light' ? (
         <img src={darkIcon} alt="darkMode" />
       ) : (
