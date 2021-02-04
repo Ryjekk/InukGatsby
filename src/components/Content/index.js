@@ -13,8 +13,8 @@ import CardLarge from '../Cards/CardLarge';
 
 const Content = ({ theme }) => {
   const { skills, welcome } = useContext(GlobalStateContext);
-  const { header, paragraph } = skills[0];
-  const { welcomeLeft, welcomeRight } = welcome[0];
+  const { header, paragraph, skills: skill } = skills.shift();
+  const { welcomeLeft, welcomeRight } = welcome.shift();
 
   return (
     <>
@@ -45,7 +45,7 @@ const Content = ({ theme }) => {
           headingContent={header}
           leftContent={paragraph}
         />
-        <Skills theme={theme} skills={skills[0].skills} />
+        <Skills theme={theme} skills={skill} />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
