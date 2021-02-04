@@ -13,8 +13,12 @@ import CardLarge from '../Cards/CardLarge';
 
 const Content = ({ theme }) => {
   const { skills, welcome } = useContext(GlobalStateContext);
-  const { header, paragraph, skills: skill } = skills[0];
-  const { welcomeLeft, welcomeRight } = welcome[0];
+  const {
+    header: headerSkill,
+    paragraph: paragraphSkill,
+    skills: skill
+  } = skills[0];
+  const { main, projects, work } = welcome[0];
 
   return (
     <>
@@ -35,25 +39,25 @@ const Content = ({ theme }) => {
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          leftContent={welcomeLeft}
-          rightContent={welcomeRight}
+          leftContent={main.welcomeLeft}
+          rightContent={main.welcomeRight}
         />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          headingContent={header}
-          leftContent={paragraph}
+          headingContent={headerSkill}
+          leftContent={paragraphSkill}
         />
         <Skills theme={theme} skills={skill} />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          headingContent="Latest Projects"
-          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+          headingContent={projects.header}
+          leftContent={projects.paragraph}
         />
-        <Cards />
+        <Cards type="project" />
       </Inner>
       <Inner>
         <CardLarge
@@ -64,10 +68,10 @@ const Content = ({ theme }) => {
       <Inner style={{ margin: '50px auto' }}>
         <Columns
           style={{ mixBlendMode: 'difference' }}
-          headingContent="Previous Work"
-          leftContent="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+          headingContent={work.header}
+          leftContent={work.paragraph}
         />
-        <Cards />
+        <Cards type="work" />
       </Inner>
     </>
   );

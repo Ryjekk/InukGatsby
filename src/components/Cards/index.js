@@ -1,28 +1,78 @@
-import React from 'react';
+import React, { useContext } from 'react';
 // Styles
 import { ColumnsWrapper, LeftContent, RightContent } from '../Columns/styles';
 import Card from './Card';
 import { WrapperMain } from '../../styles/styles';
+// Context
+import { GlobalStateContext } from '../../context/DataContext';
 
-const Cards = () => {
+const Cards = ({ type }) => {
+  const { projectsCard, workplace } = useContext(GlobalStateContext);
+
+  // Todo fix this more modular
+  const projectCardLeft = projectsCard.map((el, i) => {
+    if (i % 2 === 0) {
+      return (
+        <Card
+          key={i}
+          title={el.header_main}
+          desc={el.desc}
+          link={el.link}
+          image={el.img}
+        />
+      );
+    }
+  });
+
+  const projectCardRight = projectsCard.map((el, i) => {
+    if (i % 2 !== 0) {
+      return (
+        <Card
+          key={i}
+          title={el.header_main}
+          desc={el.desc}
+          link={el.link}
+          image={el.img}
+        />
+      );
+    }
+  });
+
+  const workCardLeft = workplace.map((el, i) => {
+    if (i % 2 === 0) {
+      return (
+        <Card
+          key={i}
+          title={el.header_main}
+          desc={el.desc}
+          link={el.link}
+          image={el.img}
+        />
+      );
+    }
+  });
+
+  const workCardRight = workplace.map((el, i) => {
+    if (i % 2 !== 0) {
+      return (
+        <Card
+          key={i}
+          title={el.header_main}
+          desc={el.desc}
+          link={el.link}
+          image={el.img}
+        />
+      );
+    }
+  });
   return (
     <WrapperMain>
       <ColumnsWrapper>
         <LeftContent>
-          <Card
-            title="AuraTattoo"
-            desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
-            link="link To"
-            image="Aura"
-          />
+          {type === 'project' ? projectCardLeft : workCardLeft}
         </LeftContent>
         <RightContent>
-          <Card
-            title="RePack"
-            desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
-            link="link To"
-            image="Repack"
-          />
+          {type === 'project' ? projectCardRight : workCardRight}
         </RightContent>
       </ColumnsWrapper>
     </WrapperMain>

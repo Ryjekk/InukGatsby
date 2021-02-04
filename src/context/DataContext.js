@@ -3,7 +3,8 @@ import React from 'react';
 import { projectsCard } from '../db/projectsCard';
 import { projectsPage } from '../db/projectsPage';
 import { skills } from '../db/skills';
-import { workspace } from '../db/workplace';
+import { workplacePage } from '../db/workplacePage';
+import { workplace } from '../db/workplace';
 import { welcome } from '../db/welcome';
 // Context
 export const GlobalStateContext = React.createContext();
@@ -15,7 +16,8 @@ const initialState = {
   skills,
   projectsCard,
   projectsPage,
-  workspace
+  workplacePage,
+  workplace
   // theme: 'dark',
   // bg: false
 };

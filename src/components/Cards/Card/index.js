@@ -3,15 +3,13 @@ import { Link } from 'gatsby';
 // Styles
 import { LocalLink, Paragraph, Subheading } from '../../../styles/styles';
 import { ProjImage, WrapperContentCard } from './styles';
-// Assets
-import aura from '../../../images/projects/Aura/pic_desktop_two.png';
 
 const Card = ({ title, desc, link, image }) => {
   return (
     // TODO plug swift image
     <WrapperContentCard>
       <Link to={link} style={{ width: '100%' }}>
-        <ProjImage style={{ backgroundImage: `url(${aura})` }} />
+        <ProjImage style={{ backgroundImage: `url(${image})` }} />
         <Subheading>{title}</Subheading>
         <Paragraph style={{ fontSize: 16 }}>{desc}</Paragraph>
         <LocalLink>
