@@ -19,7 +19,6 @@ const Nav = ({ toggleTheme, theme }) => {
         }}
       >
         <Logo
-          theme={theme}
           style={{
             position: 'relative',
             display: 'block',

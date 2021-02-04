@@ -1,26 +1,48 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 // Data
 import { projectsCard } from '../db/projectsCard';
 import { projectsPage } from '../db/projectsPage';
 import { skills } from '../db/skills';
-import { workspace } from '../db/workplace';
+import { workplacePage } from '../db/workplacePage';
+import { workplace } from '../db/workplace';
 import { welcome } from '../db/welcome';
 // Context
 export const GlobalStateContext = React.createContext();
 export const GlobalDispatchContext = React.createContext();
 
 const initialState = {
-  welcome: welcome,
-  skills: skills
+  // Theme here as well TODO
+  welcome,
+  skills,
+  projectsCard,
+  projectsPage,
+  workplacePage,
+  workplace
+  // theme: 'dark',
+  // bg: false
 };
 
 function reducer(state, action) {
   // switch (action.type) {
   //   case 'TOGGLE_THEME': {
+  //     const toggleTheme = () => {
+  //       if (state.theme === 'light') {
+  //         state.bg = 'first';
+  //         setTimeout(() => {
+  //           state.theme = 'dark';
+  //         }, 2000);
+  //       } else {
+  //         state.bg = 'second';
+  //         setTimeout(() => {
+  //           state.theme = 'light';
+  //         }, 2000);
+  //       }
+  //     };
+  //
   //     return {
-  //       ...state,
-  //       theme: state.theme === 'dark' ? 'light' : 'dark',
-  //       bg: state.bg === 'second' ? 'first' : 'second'
+  //       ...state
+  //       // theme: state.theme === 'dark' ? 'light' : 'dark',
+  //       // bg: state.bg === 'second' ? 'first' : 'second'
   //     };
   //   }
   //   default:

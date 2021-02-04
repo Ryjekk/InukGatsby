@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 // Style
 import { SwitchBtn } from './styles';
 // Assets
