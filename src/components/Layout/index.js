@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 // Styles
 import { Main } from '../../styles/styles';
 import { BgTheme } from './styles';
@@ -8,8 +8,12 @@ import ProjectContent from '../Content/ProjectContent';
 import WorkContent from '../Content/WorkContent';
 import Content from '../Content';
 import Footer from '../Footer';
+// Context
+import { GlobalStateContext } from '../../context/DataContext';
 
-const Layout = ({ toggleTheme, theme, bg, contentType }) => {
+const Layout = ({ contentType }) => {
+  const { bg } = useContext(GlobalStateContext);
+  console.log(bg);
   return (
     <Main style={{ position: 'relative' }}>
       <BgTheme
@@ -17,14 +21,13 @@ const Layout = ({ toggleTheme, theme, bg, contentType }) => {
           bg === 'first' ? 'growBlack' : bg === 'second' ? 'growWhite' : ''
         }
       />
-      <Nav theme={theme} toggleTheme={toggleTheme} />
+      <Nav />
       {contentType === 'project' ? (
         <ProjectContent />
       ) : contentType === 'work' ? (
         <WorkContent />
       ) : (
         <Content
-          theme={theme}
           style={
             {
               // zIndex: 20,

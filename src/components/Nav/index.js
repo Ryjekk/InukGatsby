@@ -6,7 +6,7 @@ import { NavContent } from './styles';
 import Switcher from './Switcher';
 import Logo from './Logo';
 
-const Nav = ({ toggleTheme, theme }) => {
+const Nav = () => {
   return (
     <Inner
       style={{
@@ -19,14 +19,13 @@ const Nav = ({ toggleTheme, theme }) => {
         }}
       >
         <Logo
-          theme={theme}
           style={{
             position: 'relative',
             display: 'block',
             zIndex: 2
           }}
         />
-        <Switcher theme={theme} toggleTheme={toggleTheme} />
+        <Switcher />
       </NavContent>
     </Inner>
   );

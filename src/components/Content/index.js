@@ -11,10 +11,10 @@ import Skills from '../Skills';
 import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
 
-const Content = ({ theme }) => {
-  const { skills, welcome } = useContext(GlobalStateContext);
-  const { header, paragraph, skills: skill } = skills.shift();
-  const { welcomeLeft, welcomeRight } = welcome.shift();
+const Content = () => {
+  const { skills, welcome, theme } = useContext(GlobalStateContext);
+  const { header, paragraph, skills: skill } = skills[0];
+  const { welcomeLeft, welcomeRight } = welcome[0];
 
   return (
     <>
