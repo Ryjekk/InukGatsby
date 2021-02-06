@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 // Components
 import {
   Image,
   LocalLink,
   Paragraph,
-  Subheading,
+  SubheadingDumb,
   WrapperContent
 } from '../../../styles/styles';
 import { BoxCol } from '../../Skills/Skill/styles';
@@ -16,7 +16,7 @@ const CardLarge = ({ title, desc, linkText, link, image }) => {
       <Link to={link} style={{ width: '100%' }}>
         <Image style={{ backgroundImage: `url(${image})` }} />
         <BoxCol style={{ margin: '16px auto' }}>
-          <Subheading>{title}</Subheading>
+          <SubheadingDumb>{title}</SubheadingDumb>
           <Paragraph style={{ fontSize: 16 }}>{desc}</Paragraph>
           <LocalLink>{linkText}</LocalLink>
         </BoxCol>

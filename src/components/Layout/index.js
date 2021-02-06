@@ -24,7 +24,6 @@ const Layout = ({ toggleTheme, theme, bg, contentType }) => {
         <WorkContent />
       ) : (
         <Content
-          theme={theme}
           style={
             {
               // zIndex: 20,

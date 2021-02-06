@@ -18,7 +18,7 @@ import Skills from '../Skills';
 import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
 
-const Content = ({ theme }) => {
+const Content = () => {
   const { skills, welcome, largeCard } = useContext(GlobalStateContext);
   const {
     header: headerSkill,
@@ -28,6 +28,12 @@ const Content = ({ theme }) => {
   const { main, projects, work } = welcome[0];
   const projectLarge = largeCard[0];
   const workLarge = largeCard[1];
+
+  const themeColors = {
+    margin: '50px auto 0 auto',
+    mixBlendMode: 'difference',
+    color: 'white'
+  };
 
   return (
     <>
@@ -47,25 +53,21 @@ const Content = ({ theme }) => {
       </Full>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
-          style={{ mixBlendMode: 'difference' }}
           leftContent={main.welcomeLeft}
           rightContent={main.welcomeRight}
         />
       </Inner>
-      <Inner style={{ margin: '50px auto' }}>
-        <Columns
-          style={{ mixBlendMode: 'difference' }}
-          headingContent={headerSkill}
-          leftContent={paragraphSkill}
-        />
-        <Skills theme={theme} skills={skill} />
+      <Inner style={themeColors}>
+        <Columns headingContent={headerSkill} leftContent={paragraphSkill} />
+        <Skills skills={skill} />
       </Inner>
-      <Inner style={{ margin: '50px auto' }}>
+      <Inner style={themeColors}>
         <Columns
-          style={{ mixBlendMode: 'difference' }}
           headingContent={projects.header}
           leftContent={projects.paragraph}
         />
+      </Inner>
+      <Inner>
         <Cards type="project" />
         <CardLarge
           title={projectLarge.header_main}
@@ -74,12 +76,10 @@ const Content = ({ theme }) => {
           image={projectLarge.img}
         />
       </Inner>
-      <Inner style={{ margin: '50px auto' }}>
-        <Columns
-          style={{ mixBlendMode: 'difference' }}
-          headingContent={work.header}
-          leftContent={work.paragraph}
-        />
+      <Inner style={themeColors}>
+        <Columns headingContent={work.header} leftContent={work.paragraph} />
+      </Inner>
+      <Inner>
         <Cards type="work" />
         <CardLarge
           title={workLarge.header_main}

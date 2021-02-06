@@ -70,7 +70,7 @@ const Cards = ({ type }) => {
     }
   });
   return (
-    <WrapperMain>
+    <WrapperMain style={{ paddingTop: '0px' }}>
       <ColumnsWrapper>
         <LeftContent>
           {type === 'project' ? projectCardLeft : workCardLeft}

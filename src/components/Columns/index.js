@@ -6,8 +6,8 @@ const Columns = ({ leftContent, rightContent, headingContent }) => {
   return (
     <ColumnsWrapper style={{ alignItems: 'start' }}>
       {headingContent ? (
-        <Heading>
-          <BorderSpan>{headingContent}</BorderSpan>
+        <Heading style={{ color: 'white' }}>
+          <BorderSpan> {headingContent}</BorderSpan>
         </Heading>
       ) : (
         ''

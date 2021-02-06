@@ -34,9 +34,14 @@ export const Paragraph = styled.p`
 export const Subheading = styled.p`
   font-size: 24px;
   letter-spacing: 4px;
+  border-bottom: 1px solid #de8d14;
+  color: #de8d14;
+  display: inline;
+`;
+
+export const SubheadingDumb = styled(Subheading)`
   border-bottom: 1px solid ${({ theme }) => theme.secondary};
   color: ${({ theme }) => theme.secondary};
-  display: inline;
 `;
 
 export const BorderSpan = styled.span`
