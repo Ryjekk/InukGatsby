@@ -27,10 +27,10 @@ export const ProjImage = styled.div`
   background-position: 50% 50%;
   margin-bottom: 30px;
   transition: all 0.3s ease-in-out;
-  filter: grayscale(1);
+  //filter: grayscale(1);
 
   :hover {
-    filter: grayscale(0);
+    //filter: grayscale(0);
     transform: translateY(-5%);
   }
 `;

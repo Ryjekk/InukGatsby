@@ -4,7 +4,7 @@ import { GlobalStateContext } from '../../context/DataContext';
 // Styles
 import { Full, Heading, Image, Inner, Mid } from '../../styles/styles';
 // Assets
-import bg1 from '../../images/projects/Aura/pic_desktop_one.png';
+import bgMain from '../../images/me.jpg';
 // Components
 import Columns from '../Columns';
 import Skills from '../Skills';
@@ -12,13 +12,15 @@ import Cards from '../Cards';
 import CardLarge from '../Cards/CardLarge';
 
 const Content = ({ theme }) => {
-  const { skills, welcome } = useContext(GlobalStateContext);
+  const { skills, welcome, largeCard } = useContext(GlobalStateContext);
   const {
     header: headerSkill,
     paragraph: paragraphSkill,
     skills: skill
   } = skills[0];
   const { main, projects, work } = welcome[0];
+  const projectLarge = largeCard[0];
+  const workLarge = largeCard[1];
 
   return (
     <>
@@ -34,7 +36,7 @@ const Content = ({ theme }) => {
         </Heading>
       </Mid>
       <Full>
-        <Image style={{ backgroundImage: `url(${bg1})` }} />
+        <Image style={{ backgroundImage: `url(${bgMain})` }} />
       </Full>
       <Inner style={{ margin: '50px auto' }}>
         <Columns
@@ -58,11 +60,11 @@ const Content = ({ theme }) => {
           leftContent={projects.paragraph}
         />
         <Cards type="project" />
-      </Inner>
-      <Inner>
         <CardLarge
-          title="AuraTattoo"
-          desc="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem"
+          title={projectLarge.header_main}
+          desc={projectLarge.desc}
+          linkText={projectLarge.link_text}
+          image={projectLarge.img}
         />
       </Inner>
       <Inner style={{ margin: '50px auto' }}>
@@ -72,6 +74,13 @@ const Content = ({ theme }) => {
           leftContent={work.paragraph}
         />
         <Cards type="work" />
+        <CardLarge
+          title={workLarge.header_main}
+          desc={workLarge.desc}
+          link={workLarge.link}
+          linkText={workLarge.link_text}
+          image={workLarge.img}
+        />
       </Inner>
     </>
   );

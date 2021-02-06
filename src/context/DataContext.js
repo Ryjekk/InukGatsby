@@ -4,8 +4,9 @@ import { projectsCard } from '../db/projectsCard';
 import { projectsPage } from '../db/projectsPage';
 import { skills } from '../db/skills';
 import { workplacePage } from '../db/workplacePage';
-import { workplace } from '../db/workplace';
+import { workplaceCard } from '../db/workplaceCard';
 import { welcome } from '../db/welcome';
+import { largeCard } from '../db/largeCard';
 // Context
 export const GlobalStateContext = React.createContext();
 export const GlobalDispatchContext = React.createContext();
@@ -17,7 +18,8 @@ const initialState = {
   projectsCard,
   projectsPage,
   workplacePage,
-  workplace
+  workplaceCard,
+  largeCard
   // theme: 'dark',
   // bg: false
 };
