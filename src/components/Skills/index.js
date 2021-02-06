@@ -8,7 +8,7 @@ import { WrapperMain } from '../../styles/styles';
 
 // TODO missing pug moustache, handlebars, chai, mongoose
 
-const Skills = ({ theme, skills }) => {
+const Skills = ({ skills }) => {
   const { core, frontend, backend, styling, databases, tools } = skills;
   const headers = Object.keys(skills);
 
@@ -19,7 +19,7 @@ const Skills = ({ theme, skills }) => {
           <HeadingSkills>{headers[0]}</HeadingSkills>
           <Skill desc={core} />
           <HeadingSkills>{headers[4]}</HeadingSkills>
-          <Skill desc={databases} theme={theme} />
+          <Skill desc={databases} />
           <HeadingSkills>{headers[5]}</HeadingSkills>
           <Skill desc={tools} />
         </LeftContent>

@@ -1,6 +1,6 @@
 const lightMode = {
   main: '#EEEEEE',
-  secondary: '#b7162e',
+  secondary: 'rgb(34, 81, 208)',
   inverse: '#121212',
   alt: '#F4F4F4',
   altWhite: '#FFFFFF',

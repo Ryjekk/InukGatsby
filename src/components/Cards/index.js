@@ -7,7 +7,7 @@ import { WrapperMain } from '../../styles/styles';
 import { GlobalStateContext } from '../../context/DataContext';
 
 const Cards = ({ type }) => {
-  const { projectsCard, workplace } = useContext(GlobalStateContext);
+  const { projectsCard, workplaceCard } = useContext(GlobalStateContext);
 
   // Todo fix this more modular
   const projectCardLeft = projectsCard.map((el, i) => {
@@ -18,6 +18,7 @@ const Cards = ({ type }) => {
           title={el.header_main}
           desc={el.desc}
           link={el.link}
+          linkText={el.link_text}
           image={el.img}
         />
       );
@@ -32,13 +33,14 @@ const Cards = ({ type }) => {
           title={el.header_main}
           desc={el.desc}
           link={el.link}
+          linkText={el.link_text}
           image={el.img}
         />
       );
     }
   });
 
-  const workCardLeft = workplace.map((el, i) => {
+  const workCardLeft = workplaceCard.map((el, i) => {
     if (i % 2 === 0) {
       return (
         <Card
@@ -46,13 +48,14 @@ const Cards = ({ type }) => {
           title={el.header_main}
           desc={el.desc}
           link={el.link}
+          linkText={el.link_text}
           image={el.img}
         />
       );
     }
   });
 
-  const workCardRight = workplace.map((el, i) => {
+  const workCardRight = workplaceCard.map((el, i) => {
     if (i % 2 !== 0) {
       return (
         <Card
@@ -60,13 +63,14 @@ const Cards = ({ type }) => {
           title={el.header_main}
           desc={el.desc}
           link={el.link}
+          linkText={el.link_text}
           image={el.img}
         />
       );
     }
   });
   return (
-    <WrapperMain>
+    <WrapperMain style={{ paddingTop: '0px' }}>
       <ColumnsWrapper>
         <LeftContent>
           {type === 'project' ? projectCardLeft : workCardLeft}

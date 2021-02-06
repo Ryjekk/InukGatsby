@@ -42,7 +42,7 @@ import {
   Heroku
 } from '@styled-icons/simple-icons/';
 
-const Skill = ({ desc, theme }) => {
+const Skill = ({ desc }) => {
   const perk = desc.map((el) => {
     switch (el) {
       case 'Html5':
@@ -204,7 +204,7 @@ const Skill = ({ desc, theme }) => {
               viewBox="0 0 64 64"
               style={{
                 width: '50px',
-                fill: theme === 'light' ? '#000' : '#eee'
+                fill: '#eee'
               }}
             >
               <path

@@ -5,12 +5,12 @@ export const WrapperContentCard = styled(WrapperContent)`
   flex-direction: column;
   margin: 50px 0;
   border-radius: 10px;
-  transform: scale(0.97);
-  transition: all 0.3s ease-in-out;
+  //transform: scale(0.97);
+  //transition: all 0.3s ease-in-out;
 
   // todo choose neomorphism
   :hover {
-    transform: scale(1);
+    //transform: scale(1);
     //box-shadow: 20px 20px 60px #181818, -20px -20px 60px #202020;
   }
 
@@ -27,10 +27,10 @@ export const ProjImage = styled.div`
   background-position: 50% 50%;
   margin-bottom: 30px;
   transition: all 0.3s ease-in-out;
-  filter: grayscale(1);
+  //filter: grayscale(1);
 
   :hover {
-    filter: grayscale(0);
-    transform: translateY(-5%);
+    //filter: grayscale(0);
+    //transform: translateY(-5%);
   }
 `;
