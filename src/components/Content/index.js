@@ -2,7 +2,14 @@ import React, { useContext } from 'react';
 // Context
 import { GlobalStateContext } from '../../context/DataContext';
 // Styles
-import { Full, Heading, Image, Inner, Mid } from '../../styles/styles';
+import {
+  Full,
+  Heading,
+  Image,
+  Inner,
+  Mid,
+  BorderSpan
+} from '../../styles/styles';
 // Assets
 import bgMain from '../../images/me.jpg';
 // Components
@@ -31,7 +38,7 @@ const Content = ({ theme }) => {
             color: 'white'
           }}
         >
-          Hello, I'm <span style={{ color: '#DE8D14' }}>Inuk</span>. <br />
+          Hello, I'm <BorderSpan>Inuk</BorderSpan>. <br />
           Software Developer, who will create your next dream product!
         </Heading>
       </Mid>

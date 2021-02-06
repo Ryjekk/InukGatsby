@@ -39,6 +39,13 @@ export const Subheading = styled.p`
   display: inline;
 `;
 
+export const BorderSpan = styled.span`
+  background-image: linear-gradient(transparent 60%, #de8d14 60%);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: top, center;
+`;
+
 // Boxes
 export const Main = styled.main`
   width: 100%;
