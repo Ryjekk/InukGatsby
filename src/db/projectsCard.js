@@ -1,10 +1,10 @@
 // Assets
 import auraPic from '../images/projects/Aura/pic_desktop_one.png';
-import repackPic from '../images/projects/RePack/pic_desktop_two.png';
+import repackPic from '../images/projects/RePack/pic_desktop_one.png';
 import ntsPic from '../images/projects/Scrapper/pic_desktop_one.png';
 import novidPic from '../images/projects/Novid/pic_desktop_one.png';
-import ctgPic from '../images/projects/CareerToGo/pic_desktop_two.png';
-import algerioPic from '../images/projects/Algerio/pic_one.png';
+import ctgPic from '../images/projects/CareerToGo/pic_desktop_one.png';
+import algerioPic from '../images/projects/Algerio/pic_desktop_one.png';
 import portPic from '../images/projects/Porfolio/pic_desktop_one.png';
 // Todo replace placeholer
 import todoPic from '../images/projects/todo.png';
@@ -52,12 +52,12 @@ export const projectsCard = [
     img: `${ntsPic}`
   },
   {
-    header_main: 'Algerio',
+    header_main: 'VueJS Portfolio',
     desc:
-      'Interesting way for visual representation of sort algorithms, build with React and deployed on Netlify',
+      'My personal previous portfolio, build in VueJS as a way to practice my skills.',
     link_text: 'Check Project',
-    link: '/algerio',
-    img: `${algerioPic}`
+    link: '/portfolio',
+    img: `${portPic}`
   },
   {
     header_main: 'ToDo',
@@ -68,11 +68,11 @@ export const projectsCard = [
     img: `${todoPic}`
   },
   {
-    header_main: 'VueJS Portfolio',
+    header_main: 'Algerio',
     desc:
-      'My personal previous portfolio, build in VueJS as a way to practice my skills.',
+      'Interesting way for visual representation of sort algorithms, build with React and deployed on Netlify',
     link_text: 'Check Project',
-    link: '/portfolio',
-    img: `${portPic}`
+    link: '/algerio',
+    img: `${algerioPic}`
   }
 ];
