@@ -12,7 +12,7 @@ export const largeCard = [
     header_main: 'Studying at Salt',
     desc:
       'Read more about my amazing experience while studying at </Salt>! Amazing school for developers placed in Stockholm.',
-    link: '/saltwork',
+    link: '/workSalt',
     link_text: `Read More ›`,
     img: `${saltWorkPic}`
   }
