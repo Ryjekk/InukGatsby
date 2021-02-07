@@ -4,18 +4,15 @@ import QUERIES, { WrapperContent } from '../../../styles/styles';
 export const WrapperContentCard = styled(WrapperContent)`
   flex-direction: column;
   margin: 50px 0;
+  padding: 20px;
   border-radius: 10px;
-  //transform: scale(0.97);
-  //transition: all 0.3s ease-in-out;
-
-  // todo choose neomorphism
-  :hover {
-    //transform: scale(1);
-    //box-shadow: 20px 20px 60px #181818, -20px -20px 60px #202020;
-  }
+  background-image: ${({ theme }) => theme.gradient};
 
   @media (${QUERIES.large}) {
-    align-items: flex-start;
+    //align-items: flex-start;
+  }
+  // TODO Add box shadow, color
+  :hover {
   }
 `;
 
@@ -27,10 +24,9 @@ export const ProjImage = styled.div`
   background-position: 50% 50%;
   margin-bottom: 30px;
   transition: all 0.3s ease-in-out;
-  //filter: grayscale(1);
-
-  :hover {
-    //filter: grayscale(0);
-    //transform: translateY(-5%);
-  }
+  //transform: scale(0.97);
+  //
+  //:hover {
+  //  transform: scale(1);
+  //}
 `;

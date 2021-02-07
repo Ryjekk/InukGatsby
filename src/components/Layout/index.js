@@ -23,16 +23,7 @@ const Layout = ({ toggleTheme, theme, bg, contentType }) => {
       ) : contentType === 'work' ? (
         <WorkContent />
       ) : (
-        <Content
-          style={
-            {
-              // zIndex: 20,
-              // display: 'block',
-              // position: 'relative',
-              // mixBlendMode: 'difference'
-            }
-          }
-        />
+        <Content />
       )}
       <Footer />
     </Main>

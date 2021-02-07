@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { LocalLink, Paragraph, SubheadingDumb } from '../../../styles/styles';
 import { ProjImage, WrapperContentCard } from './styles';
 
+// TODO add stack pills
 const Card = ({ title, desc, link, linkText, image }) => {
   return (
     <WrapperContentCard>

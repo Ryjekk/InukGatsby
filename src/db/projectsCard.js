@@ -4,7 +4,7 @@ import repackPic from '../images/projects/RePack/pic_desktop_two.png';
 import ntsPic from '../images/projects/Scrapper/pic_desktop_one.png';
 import novidPic from '../images/projects/Novid/pic_desktop_one.png';
 import ctgPic from '../images/projects/CareerToGo/pic_desktop_two.png';
-import algerioPic from '../images/projects/Thumbnails/algo_thumb.png';
+import algerioPic from '../images/projects/Algerio/pic_one.png';
 import portPic from '../images/projects/Porfolio/pic_desktop_one.png';
 // Todo replace placeholer
 import soon from '../images/soon.jpg';
@@ -19,7 +19,7 @@ export const projectsCard = [
   },
   {
     header_main: 'RePack',
-    desc: 'xxx',
+    desc: 'xxxxxxxxxxxxxxxxxxx xxxxxxxx xxxxxxx xxxxxxxxxx xxxxxxxxx xxxxx',
     link_text: 'Check Project',
     link: '/repack',
     img: `${repackPic}`
