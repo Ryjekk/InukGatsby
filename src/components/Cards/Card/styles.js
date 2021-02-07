@@ -11,8 +11,9 @@ export const WrapperContentCard = styled(WrapperContent)`
   @media (${QUERIES.large}) {
     //align-items: flex-start;
   }
-  // TODO Add box shadow, color
+
   :hover {
+    color: ${({ theme }) => theme.secondary};
   }
 `;
 

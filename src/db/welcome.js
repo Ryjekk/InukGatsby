@@ -13,7 +13,8 @@ export const welcome = [
     },
     work: {
       header: 'Previous Work',
-      paragraph: 'xxx'
+      paragraph:
+        'Here you can reed little bit more about my previous working experience, like also get more information about my education.'
     }
   }
 ];
