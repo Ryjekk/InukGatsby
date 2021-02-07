@@ -121,13 +121,13 @@ export const WrapperContent = styled.div`
 
   ${Paragraph} {
     font-size: 14px;
-    padding: 16px 0;
+    padding: 24px 0;
     color: ${({ theme }) => theme.textLight};
   }
 `;
 
 export const LocalLink = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   display: inline-block;
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease-in-out;
