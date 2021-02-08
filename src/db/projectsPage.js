@@ -1,4 +1,5 @@
 // 1260 img size
+import todoTemp from '../images/projects/todo_transparent.png';
 // img_project_one
 import p1Algerio from '../images/projects/Algerio/project_one.png';
 import p1Aura from '../images/projects/Aura/project_one.png';
@@ -225,7 +226,7 @@ export const projectsPage = [
         link: 'https://github.com/Ryjekk/ToDo_Server'
       }
     },
-    img_project_one: '',
+    img_project_one: `${todoTemp}`,
     header_goal: 'Project Goal and Purpose',
     paragraph_goal_one:
       'Main goal of this project was to use knowledge and skills gained after lesson about GraphQL. We tried to put all useful tools to make fully functional and ready todo list backend service',
@@ -237,12 +238,11 @@ export const projectsPage = [
     paragraph_explanation_two:
       "GraphQL was mainly chosen because I wanted to improve my abilities with it, but also because their server performance is extremely fast, and I knew there wouldn't be any wait time.",
     stack_badges: ['Nodejs', 'Express', 'Graphql', 'Heroku'],
-    img_project_overall: '',
+    img_project_overall: `${todoTemp}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
-      'Since we worked on this code in small team we decided to go over coding process and logic by creating list of necessary logic and features with we will need for this project. Because if that we were able to speed up process of developing',
-    img_project_two:
-      'In this case we found the most difficult to work with JWT and creating process of authorisation and authentication. After doing some research we were able to pull and deliver this product.',
+      'Since we worked on this code in small team we decided to go over coding process and logic by creating list of necessary logic and features with we will need for this project. Because if that we were able to speed up process of developing In this case we found the most difficult to work with JWT and creating process of authorisation and authentication. After doing some research we were able to pull and deliver this product.',
+    img_project_two: `${todoTemp}`,
     header_lesson: 'Future Improvements',
     paragraph_lesson:
       'As a next step I see possibility to plug our ready backed to some frontend part of application to show real power and advance of our product'
