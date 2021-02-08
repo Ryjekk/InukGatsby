@@ -3,11 +3,15 @@ import QUERIES, { SubheadingDumb } from '../../styles/styles';
 
 export const TableWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const TableCell = styled.div`
   padding-right: 20px;
+  margin-bottom: 20px;
+
   @media (${QUERIES.large}) {
+    margin-bottom: 0;
     padding-right: 40px;
   }
 `;

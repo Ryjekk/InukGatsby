@@ -30,7 +30,7 @@ const ProjectContent = ({ name }) => {
       <Inner>
         <Table table={projectData.table} />
       </Inner>
-      <Inner style={{ margin: '60px auto' }}>
+      <Inner style={{ margin: '30px auto' }}>
         <img src={projectData.img_project_one} alt="img project one" />
       </Inner>
       <Inner style={themeColors}>
