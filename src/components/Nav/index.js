@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 // Style
 import { Inner } from '../../styles/styles';
 import { NavContent } from './styles';
@@ -18,13 +19,15 @@ const Nav = ({ toggleTheme, theme }) => {
           mixBlendMode: 'difference'
         }}
       >
-        <Logo
-          style={{
-            position: 'relative',
-            display: 'block',
-            zIndex: 2
-          }}
-        />
+        <Link to="/">
+          <Logo
+            style={{
+              position: 'relative',
+              display: 'block',
+              zIndex: 2
+            }}
+          />
+        </Link>
         <Switcher theme={theme} toggleTheme={toggleTheme} />
       </NavContent>
     </Inner>

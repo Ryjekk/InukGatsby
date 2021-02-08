@@ -11,6 +11,7 @@ import Layout from '../components/Layout';
 
 const ProjectAura = () => {
   const [theme, bg, toggleTheme] = useDarkMode();
+
   return (
     <DataContextProvider>
       <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>

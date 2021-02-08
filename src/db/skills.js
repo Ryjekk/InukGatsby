@@ -21,7 +21,9 @@ export const skills = [
         'StyledComponents',
         'MaterialUi',
         'Tailwindcss',
-        'Bootstrap'
+        'Bootstrap',
+        'Figma',
+        'Adobexd'
       ],
       databases: ['Mongodb', 'Postgresql', 'FaunaDB'],
       tools: [
@@ -29,14 +31,13 @@ export const skills = [
         'Github',
         'Mocha',
         'Jest',
+        'Puppeteer',
         'Docker',
         'Webpack',
         'Firebase',
         'Amazonaws',
         'Netlify',
-        'Heroku',
-        'Figma',
-        'Adobexd'
+        'Heroku'
       ]
     }
   }

@@ -22,6 +22,26 @@ export const ColumnsWrapper = styled.div`
       font-size: 40px;
     }
   }
+
+  .projectFont {
+    font-size: 40px;
+
+    @media (${QUERIES.large}) {
+      font-size: 90px;
+    }
+  }
+
+  .projectHeaderEnd {
+    @media (${QUERIES.large}) {
+      float: right;
+    }
+  }
+
+  .boxSizeProject {
+    @media (${QUERIES.large}) {
+      width: 65%;
+    }
+  }
 `;
 
 export const RightContent = styled.div`
@@ -44,4 +64,9 @@ export const LeftContent = styled.div`
     padding-right: 50px;
     width: 50%;
   }
+`;
+
+export const PerkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;

@@ -6,6 +6,7 @@ export const largeCard = [
     header_main: 'ToDo Front App',
     desc: 'Frontend part of ToDo app, build in Gatsby.',
     link_text: 'Coming Soon',
+    link: '/',
     img: `${soon}`
   },
   {

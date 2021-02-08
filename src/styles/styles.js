@@ -36,7 +36,7 @@ export const Subheading = styled.p`
   letter-spacing: 4px;
   border-bottom: 1px solid #de8d14;
   color: #de8d14;
-  display: inline;
+  display: inline-block;
 `;
 
 export const SubheadingDumb = styled(Subheading)`
