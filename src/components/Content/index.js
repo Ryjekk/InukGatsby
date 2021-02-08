@@ -72,6 +72,7 @@ const Content = () => {
         <CardLarge
           title={projectLarge.header_main}
           desc={projectLarge.desc}
+          link={projectLarge.link}
           linkText={projectLarge.link_text}
           image={projectLarge.img}
         />
