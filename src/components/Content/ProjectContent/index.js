@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
+// Context
 import { GlobalStateContext } from '../../../context/DataContext';
+// Styles
 import { Inner } from '../../../styles/styles';
+// Components
 import Columns from '../../Columns';
 import Table from '../../Table';
 

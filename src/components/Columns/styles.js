@@ -74,6 +74,7 @@ export const LeftContent = styled.div`
 
 export const PerkWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 `;
 
