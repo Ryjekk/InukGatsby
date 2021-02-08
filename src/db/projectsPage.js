@@ -7,7 +7,22 @@ import p1Novid from '../images/projects/Novid/project_one.png';
 import p1Portfolio from '../images/projects/Porfolio/project_one.png';
 import p1Repack from '../images/projects/RePack/project_one.png';
 import p1Nts from '../images/projects/Scrapper/project_one.png';
-//
+// img_project_overall
+import o1Aura from '../images/projects/Aura/project_three.png';
+import o1Nts from '../images/projects/Scrapper/project_three.png';
+import o1Novid from '../images/projects/Novid/project_three.png';
+import o1Ctg from '../images/projects/CareerToGo/project_three.png';
+import o1Algerio from '../images/projects/Algerio/project_three.png';
+import o1Portfolio from '../images/projects/Porfolio/project_three.png';
+import o1Repack from '../images/projects/RePack/project_three.png';
+// img_project_two
+import p2Aura from '../images/projects/Aura/project_two.png';
+import p2Nts from '../images/projects/Scrapper/project_two.png';
+import p2Novid from '../images/projects/Novid/project_two.png';
+import p2Ctg from '../images/projects/CareerToGo/project_two.png';
+import p2Algerio from '../images/projects/Algerio/project_two.jpg';
+import p2Portfolio from '../images/projects/Porfolio/project_two.png';
+import p2Repack from '../images/projects/RePack/project_two.png';
 
 export const projectsPage = [
   {
@@ -39,11 +54,11 @@ export const projectsPage = [
     paragraph_explanation_two:
       'In this project I also found out way to use EmailJS to provide smoth direct message system between Client and Aura Tattoo studio.',
     stack_badges: ['ReactLogo', 'StyledComponents', 'Netlify'],
-    img_project_overall: '',
+    img_project_overall: `${o1Aura}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'This project was created after learning about React, therefore during the process of coding I encountered lots of small challenges. I tried to build and structure code as clean as I could.',
-    img_project_two: '',
+    img_project_two: `${p2Aura}`,
     header_lesson: 'Future Improvements',
     paragraph_lesson:
       'Since this project was mainly build using class components as a future improvements I can see migrating to React Hooks. Also This project is still under heavy development - therefore we can expect new features like Shop in the close feature'
@@ -93,11 +108,11 @@ export const projectsPage = [
       'Heroku',
       'Puppeteer'
     ],
-    img_project_overall: '',
+    img_project_overall: `${o1Nts}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'Biggest problem which I encountered during this project was to build proper scrapper - Since Puppeteer have not clear documentation in this field. But by the end of the day I menage to build scrapper with satisfy complicity.',
-    img_project_two: '',
+    img_project_two: `${p2Nts}`,
     header_lesson: 'Lesson Learned',
     paragraph_lesson:
       'As a main Lesson taken from this challenge I can point a process of building scrapper itself, and at the same time it was really rewarding to see how big impact your program have. As a future development I could see stepping away from storing data locally in JSON format and move it to some more organized db like MongoDB, or FaunaDB'
@@ -124,7 +139,7 @@ export const projectsPage = [
       },
       live: {
         text: 'Live view',
-        link: 'https://novid-client.netlify.app/'
+        link: 'https://novid-client.herokuapp.com'
       }
     },
     img_project_one: `${p1Novid}`,
@@ -146,11 +161,11 @@ export const projectsPage = [
       'Netlify',
       'Heroku'
     ],
-    img_project_overall: '',
+    img_project_overall: `${o1Novid}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'The biggest challenge encountered during this task was to sync remote work during COVID-19 isolation. Beside this obvious reason, main problem which we overcome was to provide good level of security of personal data.',
-    img_project_two: '',
+    img_project_two: `${p2Novid}`,
     header_lesson: 'Lesson Learned and Future Improvements',
     paragraph_lesson:
       'This project helped to solidify a lot my React knowledge, such as using hooks or updating the states. I also got a lot of great practice using ES6+ syntax across the entirety of the project. This was a large code base to manage across a team, and we all got some more great experience with version control and reviewing each others code.'
@@ -184,11 +199,11 @@ export const projectsPage = [
     paragraph_explanation_two:
       "This product is using PHP and its framework Laravel 6. As a way to store data we decided to use MySQL because in our case data which we collect in expected - therefore it's fits into Schema approach provided by SQL languages. Whole product is hosted on AWS S3 bucket",
     stack_badges: ['Vuejs', 'NuxtDotJs', 'Amazonaws', 'Mysql', 'Tailwindcss'],
-    img_project_overall: '',
+    img_project_overall: `${o1Ctg}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'During my working days usually we were trying to solve problems on fly. Since that was my first real life project I had opportunity to learn from the best Designers and Developers.',
-    img_project_two: '',
+    img_project_two: `${p2Ctg}`,
     header_lesson: 'Lesson Learned',
     paragraph_lesson:
       'As a first real product work experience it was amazing to be able to see and relay on knowledge of my older colleges. Each day we had morning meeting where we disposed daily tasks like also we talked about long time runs. Time spent in CareerToGo ground me even more in that that being a Software Developer is something what I really want to do.'
@@ -260,11 +275,11 @@ export const projectsPage = [
     paragraph_explanation_two:
       " To publish the application, I hosted it through Netlify, because its easy, free and how I've hosted many of my projects.",
     stack_badges: ['ReactLogo', 'Netlify'],
-    img_project_overall: '',
+    img_project_overall: `${o1Algerio}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'During the process of developing I founded the most difficult to Visualise process of sort using CSS styles, but with help of Google I menage to organise correct way to display it',
-    img_project_two: '',
+    img_project_two: `${p2Algerio}`,
     header_lesson: 'Future Improvements',
     paragraph_lesson:
       'As na natural way I could see as a natural process of further improvements adding new sort algorithms. Also as a interesting way it would be to add field where you can decide how big have to be sorting array and how fast it should sort. Beside that since UI seems little bit old I could spice it little bit up'
@@ -297,10 +312,10 @@ export const projectsPage = [
     paragraph_explanation_two:
       'I chose to use Vue because of its ease of use and the ability to smoothly manipulate states without having to re-render the pages.',
     stack_badges: ['Vuejs', 'Sass', 'Netlify'],
-    img_project_overall: '',
+    img_project_overall: `${o1Portfolio}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems: '',
-    img_project_two: '',
+    img_project_two: `${p2Portfolio}`,
     header_lesson: 'Lesson Learned',
     paragraph_lesson:
       'During the process of creating my portfolio I definitely got better grasp over VueJS concept. As a future improvements I could see to move and separate all data and place them as an API'
@@ -345,10 +360,10 @@ export const projectsPage = [
       'Netlify',
       'Heroku'
     ],
-    img_project_overall: '',
+    img_project_overall: `${o1Repack}`,
     header_problems: '',
     paragraph_problems: '',
-    img_project_two: '',
+    img_project_two: `${p2Repack}`,
     header_lesson: '',
     paragraph_lesson: ''
   }
