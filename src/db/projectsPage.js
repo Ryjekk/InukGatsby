@@ -20,6 +20,7 @@ import p2Aura from '../images/projects/Aura/project_two.png';
 import p2Nts from '../images/projects/Scrapper/project_two.png';
 import p2Novid from '../images/projects/Novid/project_two.png';
 import p2Ctg from '../images/projects/CareerToGo/project_two.png';
+import p2Algerio from '../images/projects/Algerio/project_two.jpg';
 import p2Portfolio from '../images/projects/Porfolio/project_two.png';
 import p2Repack from '../images/projects/RePack/project_two.png';
 
@@ -278,7 +279,7 @@ export const projectsPage = [
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'During the process of developing I founded the most difficult to Visualise process of sort using CSS styles, but with help of Google I menage to organise correct way to display it',
-    img_project_two: '',
+    img_project_two: `${p2Algerio}`,
     header_lesson: 'Future Improvements',
     paragraph_lesson:
       'As na natural way I could see as a natural process of further improvements adding new sort algorithms. Also as a interesting way it would be to add field where you can decide how big have to be sorting array and how fast it should sort. Beside that since UI seems little bit old I could spice it little bit up'
