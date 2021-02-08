@@ -3,7 +3,7 @@ module.exports = {
     title: `InukRy - Software Developer`,
     description: `Personal portfolio of Software Developer - Marcin Inuk Ryjewsky`,
     author: `@ryjewsky`,
-    siteUrl: 'https://ryjewski.netlify.app/'
+    siteUrl: 'https://ryjewsky.netlify.app/'
   },
   plugins: [
     `gatsby-plugin-netlify`,

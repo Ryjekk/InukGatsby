@@ -298,7 +298,7 @@ export const projectsPage = [
       },
       live: {
         text: 'Live view',
-        link: 'https://ryjewsky.netlify.app/'
+        link: 'https://ryjewski.netlify.app/'
       }
     },
     img_project_one: `${p1Portfolio}`,
