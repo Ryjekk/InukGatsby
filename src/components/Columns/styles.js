@@ -33,7 +33,13 @@ export const ColumnsWrapper = styled.div`
 
   .projectHeaderEnd {
     @media (${QUERIES.large}) {
-      float: right;
+      text-align: right;
+    }
+  }
+
+  .projectHeaderCenter {
+    @media (${QUERIES.large}) {
+      text-align: center;
     }
   }
 
@@ -69,4 +75,11 @@ export const LeftContent = styled.div`
 export const PerkWrapper = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const CenterContent = styled.div`
+  @media (${QUERIES.large}) {
+    width: 70%;
+    margin: 0 auto;
+  }
 `;

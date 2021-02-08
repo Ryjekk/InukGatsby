@@ -1,6 +1,7 @@
 import React from 'react';
 // Styles
 import {
+  CenterContent,
   ColumnsWrapper,
   LeftContent,
   PerkWrapper,
@@ -19,16 +20,23 @@ const Columns = ({
   boxSizeProject,
   leftContentTwo,
   rightContentTwo,
+  centerContent,
   stackPerk
 }) => {
   const heading = headingContent ? (
     <Heading
       style={{ color: 'white' }}
-      className={styleProject ? 'projectFont' : ''}
+      className={
+        styleProject
+          ? 'projectFont'
+          : centerContent
+          ? 'projectHeaderCenter'
+          : rightContentTwo
+          ? 'projectHeaderEnd'
+          : ''
+      }
     >
-      <BorderSpan className={rightContentTwo ? 'projectHeaderEnd' : ''}>
-        {headingContent}
-      </BorderSpan>
+      <BorderSpan>{headingContent}</BorderSpan>
     </Heading>
   ) : null;
 
@@ -49,6 +57,9 @@ const Columns = ({
         <Paragraph>{rightContent}</Paragraph>
         <Paragraph style={{ marginTop: '30px' }}>{rightContentTwo}</Paragraph>
       </RightContent>
+      <CenterContent>
+        <Paragraph>{centerContent}</Paragraph>
+      </CenterContent>
     </ColumnsWrapper>
   );
 };

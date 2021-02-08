@@ -28,7 +28,7 @@ const ProjectContent = () => {
       <Inner>
         <Table table={projectData.table} />
       </Inner>
-      <Inner>
+      <Inner style={{ margin: '60px auto' }}>
         <img src={projectData.img_project_one} alt="img project one" />
       </Inner>
       <Inner style={themeColors}>
@@ -45,6 +45,25 @@ const ProjectContent = () => {
           stackPerk={projectData.stack_badges}
           rightContent={projectData.paragraph_explanation_one}
           rightContentTwo={projectData.paragraph_explanation_two}
+        />
+      </Inner>
+      <Inner style={{ margin: '60px auto' }}>
+        <img src={projectData.img_project_overall} alt="img project overall" />
+      </Inner>
+      <Inner style={themeColors}>
+        <Columns
+          headingContent={projectData.header_problems}
+          centerContent={projectData.paragraph_problems}
+        />
+      </Inner>
+      <Inner style={{ margin: '60px auto' }}>
+        <img src={projectData.img_project_two} alt="img project two" />
+      </Inner>
+      <Inner style={themeColors}>
+        <Columns
+          boxSizeProject
+          headingContent={projectData.header_lesson}
+          leftContent={projectData.paragraph_lesson}
         />
       </Inner>
     </>
