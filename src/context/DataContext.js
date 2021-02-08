@@ -12,7 +12,6 @@ export const GlobalStateContext = React.createContext();
 export const GlobalDispatchContext = React.createContext();
 
 const initialState = {
-  // Theme here as well TODO
   welcome,
   skills,
   projectsCard,
@@ -20,37 +19,9 @@ const initialState = {
   workplacePage,
   workplaceCard,
   largeCard
-  // theme: 'dark',
-  // bg: false
 };
 
-function reducer(state, action) {
-  // switch (action.type) {
-  //   case 'TOGGLE_THEME': {
-  //     const toggleTheme = () => {
-  //       if (state.theme === 'light') {
-  //         state.bg = 'first';
-  //         setTimeout(() => {
-  //           state.theme = 'dark';
-  //         }, 2000);
-  //       } else {
-  //         state.bg = 'second';
-  //         setTimeout(() => {
-  //           state.theme = 'light';
-  //         }, 2000);
-  //       }
-  //     };
-  //
-  //     return {
-  //       ...state
-  //       // theme: state.theme === 'dark' ? 'light' : 'dark',
-  //       // bg: state.bg === 'second' ? 'first' : 'second'
-  //     };
-  //   }
-  //   default:
-  //     return null;
-  // }
-}
+function reducer(state, action) {}
 
 const DataContextProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(reducer, initialState);

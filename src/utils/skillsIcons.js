@@ -11,7 +11,6 @@ import {
   Git,
   Github,
   Javascript,
-  Jquery,
   Nodejs,
   ReactLogo,
   Redux,
@@ -115,13 +114,6 @@ export const perkCreator = (desc) =>
             <Paragraph>Nuxt</Paragraph>
           </BoxCol>
         );
-      // case 'Jquery':
-      //   return (
-      //     <BoxCol key={el}>
-      //       <Jquery style={{ width: '50px' }} />
-      //       <Paragraph>{el}</Paragraph>
-      //     </BoxCol>
-      //   );
       case 'Nodejs':
         return (
           <BoxCol key={el}>
