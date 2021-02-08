@@ -20,6 +20,7 @@ const WorkRepack = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="work"
+          name="/workRepack"
         />
       </ThemeProvider>
     </DataContextProvider>

@@ -20,6 +20,7 @@ const ProjectRepack = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="project"
+          name="/projectRepack"
         />
       </ThemeProvider>
     </DataContextProvider>

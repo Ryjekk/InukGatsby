@@ -21,6 +21,7 @@ const ProjectAura = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="project"
+          name="/projectAura"
         />
       </ThemeProvider>
     </DataContextProvider>

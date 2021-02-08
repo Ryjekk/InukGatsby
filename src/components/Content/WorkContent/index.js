@@ -3,10 +3,9 @@ import Columns from '../../Columns';
 import { Inner } from '../../../styles/styles';
 import { GlobalStateContext } from '../../../context/DataContext';
 
-const WorkContent = () => {
-  const url = window.location.pathname;
+const WorkContent = ({ name }) => {
   const { workplacePage } = useContext(GlobalStateContext);
-  const workplaceData = workplacePage.find((el) => el.name === url);
+  const workplaceData = workplacePage.find((el) => el.name === name);
 
   const themeColors = {
     margin: '50px auto 0 auto',

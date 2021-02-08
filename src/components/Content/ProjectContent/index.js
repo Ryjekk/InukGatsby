@@ -7,10 +7,9 @@ import { Inner } from '../../../styles/styles';
 import Columns from '../../Columns';
 import Table from '../../Table';
 
-const ProjectContent = () => {
-  const url = window.location.pathname;
+const ProjectContent = ({ name }) => {
   const { projectsPage } = useContext(GlobalStateContext);
-  const projectData = projectsPage.find((el) => el.name === url);
+  const projectData = projectsPage.find((el) => el.name === name);
 
   const themeColors = {
     margin: '50px auto 0 auto',

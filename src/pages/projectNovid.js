@@ -20,6 +20,7 @@ const ProjectNovid = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="project"
+          name="/projectNovid"
         />
       </ThemeProvider>
     </DataContextProvider>

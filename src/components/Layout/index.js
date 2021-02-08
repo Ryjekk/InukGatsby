@@ -9,7 +9,7 @@ import WorkContent from '../Content/WorkContent';
 import Content from '../Content';
 import Footer from '../Footer';
 
-const Layout = ({ toggleTheme, theme, bg, contentType }) => {
+const Layout = ({ toggleTheme, theme, bg, contentType, name }) => {
   return (
     <Main style={{ position: 'relative' }}>
       <BgTheme
@@ -19,9 +19,9 @@ const Layout = ({ toggleTheme, theme, bg, contentType }) => {
       />
       <Nav theme={theme} toggleTheme={toggleTheme} />
       {contentType === 'project' ? (
-        <ProjectContent />
+        <ProjectContent name={name} />
       ) : contentType === 'work' ? (
-        <WorkContent />
+        <WorkContent name={name} />
       ) : (
         <Content />
       )}

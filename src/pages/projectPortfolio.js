@@ -20,6 +20,7 @@ const ProjectPortfolio = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="project"
+          name="/projectPortfolio"
         />
       </ThemeProvider>
     </DataContextProvider>

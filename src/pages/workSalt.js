@@ -20,6 +20,7 @@ const WorkSalt = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="work"
+          name="/workSalt"
         />
       </ThemeProvider>
     </DataContextProvider>

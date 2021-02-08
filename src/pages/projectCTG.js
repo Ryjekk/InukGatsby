@@ -20,6 +20,7 @@ const ProjectCtg = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="project"
+          name="/projectCTG"
         />
       </ThemeProvider>
     </DataContextProvider>

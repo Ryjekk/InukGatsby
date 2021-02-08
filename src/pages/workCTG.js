@@ -20,6 +20,7 @@ const WorkCtg = () => {
           theme={theme}
           toggleTheme={toggleTheme}
           contentType="work"
+          name="/workCTG"
         />
       </ThemeProvider>
     </DataContextProvider>
