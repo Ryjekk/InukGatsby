@@ -1,5 +1,5 @@
 import soon from '../images/projects/soon.jpg';
-import saltWorkPic from '../images/workspace/salt.png';
+import saltWorkPic from '../images/workspace/Salt/pic_desktop_one.png';
 
 export const largeCard = [
   {

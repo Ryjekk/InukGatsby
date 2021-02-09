@@ -1,6 +1,6 @@
 // Assets
-import ctgWorkPic from '../images/workspace/ctg.png';
-import repackWorkPic from '../images/workspace/repack.png';
+import ctgWorkPic from '../images/workspace/CTG/pic_desktop_one.png';
+import repackWorkPic from '../images/workspace/Repack/pic_desktop_one.png';
 
 export const workplaceCard = [
   {
