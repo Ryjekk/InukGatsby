@@ -1,5 +1,3 @@
-// 1260 img size
-import todoTemp from '../images/projects/todo_transparent.png';
 // img_project_one
 import p1Algerio from '../images/projects/Algerio/project_one.png';
 import p1Aura from '../images/projects/Aura/project_one.png';
@@ -8,6 +6,7 @@ import p1Novid from '../images/projects/Novid/project_one.png';
 import p1Portfolio from '../images/projects/Porfolio/project_one.png';
 import p1Repack from '../images/projects/RePack/project_one.png';
 import p1Nts from '../images/projects/Scrapper/project_one.png';
+import p1Todo from '../images/projects/Todo/project_one.png';
 // img_project_overall
 import o1Aura from '../images/projects/Aura/project_three.png';
 import o1Nts from '../images/projects/Scrapper/project_three.png';
@@ -16,6 +15,7 @@ import o1Ctg from '../images/projects/CareerToGo/project_three.png';
 import o1Algerio from '../images/projects/Algerio/project_three.png';
 import o1Portfolio from '../images/projects/Porfolio/project_three.png';
 import o1Repack from '../images/projects/RePack/project_three.png';
+import o1Todo from '../images/projects/Todo/project_three.png';
 // img_project_two
 import p2Aura from '../images/projects/Aura/project_two.png';
 import p2Nts from '../images/projects/Scrapper/project_two.png';
@@ -24,6 +24,7 @@ import p2Ctg from '../images/projects/CareerToGo/project_two.png';
 import p2Algerio from '../images/projects/Algerio/project_two.jpg';
 import p2Portfolio from '../images/projects/Porfolio/project_two.png';
 import p2Repack from '../images/projects/RePack/project_two.png';
+import p2Todo from '../images/projects/Todo/project_two.png';
 
 export const projectsPage = [
   {
@@ -48,12 +49,12 @@ export const projectsPage = [
     paragraph_goal_one:
       'This project had three main goals: Allows user to check artist and their work, display all artist coming for the guest spot, and also allow user to make simple booking application.',
     paragraph_goal_two:
-      'I think all of this goals was achieved on final stage of product. Since this project is still under active development The product owner is thinking about expanding page even more by adding a shop functionality.',
+      'I think all of this goals was achieved on final stage of product. Since this project is still under active development The product owner is thinking about expanding website adding for example a shop functionality.',
     header_explanation: 'Web Stack and Reasoning',
     paragraph_explanation_one:
       "For this project I used React, but many different Javascript libraries could've been used, and even vanilla Javascript could have been easily implemented. I chose to use React because of its ease of use and the ability to smoothly manipulate states without having to re-render the pages.",
     paragraph_explanation_two:
-      'In this project I also found out way to use EmailJS to provide smoth direct message system between Client and Aura Tattoo studio.',
+      'In this project I also found out way to use EmailJS to provide smooth direct message system between Client and Aura Tattoo studio.',
     stack_badges: ['ReactLogo', 'StyledComponents', 'Netlify'],
     img_project_overall: `${o1Aura}`,
     header_problems: 'Thought Process and Encountered Problems',
@@ -92,9 +93,9 @@ export const projectsPage = [
     img_project_one: `${p1Nts}`,
     header_goal: 'Project Goal and Purpose',
     paragraph_goal_one:
-      'The main goal of this challenge was to build functional product within one day. Beside obvious timeframe secondary goal was to practice usage og NodeJS with Express and React. As a extra tool I decided to use Puppeteer. This project was made only for learning purposes.',
-    paragraph_goal_two:
       'I was always amazed with concept of data crawling and web scrapping therefore I decided to build own automated web scrapper.',
+    paragraph_goal_two:
+      'The main goal of this challenge was to build functional product within one day. Beside obvious timeframe secondary goal was to practice usage og NodeJS with Express and React. As a extra tool I decided to use Puppeteer. This project was made only for learning purposes.',
     header_explanation: 'Web Stack and Reasoning',
     paragraph_explanation_one:
       'For this project I decided to use NodeJS with Express as a base for my API. That choice was obvious for me because of flexibility and powerfulness of Node. I decided to automate process of Scrapping data hourly, and save all data in JSON file. As a scrapping tool I used Puppeteer since its a most common tool to use with Node.',
@@ -122,7 +123,7 @@ export const projectsPage = [
     name: '/projectNovid',
     header_main: 'Novid',
     paragraph:
-      'Novid is a project I build alongside with Einar and Torbjorn as a final project at Salt. Novid allows you to easy track movement of your employees during their work time like also witll allert people which were exposed fot potential COVID-19 risk',
+      'Novid is a project I build alongside with Einar and Torbjorn as a final project at Salt. Novid allows you to easy track movement of your employees during their work time like also will alert people which were exposed fot potential COVID-19 risk',
     table: {
       type: 'Team Project',
       stack: [
@@ -151,7 +152,7 @@ export const projectsPage = [
       'Since we had a timeframe of around 10 days we decided to be more focused on functionality and logic which at this time we delivered on a promising level.',
     header_explanation: 'Web Stack and Reasoning',
     paragraph_explanation_one:
-      'React was the clear choice for this project, because of its ease of state management and the amount of packages available. We also utilized Netlify as a server to host Novid, because it allows live updates alongside github.',
+      'React was the clear choice for this project, because of its ease of state management and the amount of packages which are available for React itself. We also utilized Netlify as a server to host Novid, because it allows live updates alongside github.',
     paragraph_explanation_two:
       'NodeJS, and MongoDB was an excellent choice since our app should have a Startup potential. This choice allows us to easily scale app depending of our needs',
     stack_badges: [
@@ -184,8 +185,8 @@ export const projectsPage = [
         link: 'mailto:ryjewski@gmail.com'
       },
       live: {
-        text: 'Official website',
-        link: 'https://www.careertogo.dk/'
+        text: 'FB profile',
+        link: 'https://www.facebook.com/CareerToGo/'
       }
     },
     img_project_one: `${p1Ctg}`,
@@ -213,7 +214,7 @@ export const projectsPage = [
     name: '/projectToDo',
     header_main: 'ToDo',
     paragraph:
-      'This project is a fully functional Back-end for todo Application, you can find here features like: Logging in, Registration with authorization, storing Todos in Database and more',
+      'This project is a fully functional Back-end ready for todo Application, you can find here features like: Logging in, Registration with authorization, storing Todos in Database and more',
     table: {
       type: 'Co-Project',
       stack: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'GraphQL', 'Heroku'],
@@ -222,11 +223,11 @@ export const projectsPage = [
         link: 'https://github.com/Ryjekk/ToDo_Server'
       },
       live: {
-        text: 'Live view',
-        link: 'https://github.com/Ryjekk/ToDo_Server'
+        text: 'Team',
+        link: 'https://github.com/MaciejGL'
       }
     },
-    img_project_one: `${todoTemp}`,
+    img_project_one: `${p1Todo}`,
     header_goal: 'Project Goal and Purpose',
     paragraph_goal_one:
       'Main goal of this project was to use knowledge and skills gained after lesson about GraphQL. We tried to put all useful tools to make fully functional and ready todo list backend service',
@@ -238,11 +239,11 @@ export const projectsPage = [
     paragraph_explanation_two:
       "GraphQL was mainly chosen because I wanted to improve my abilities with it, but also because their server performance is extremely fast, and I knew there wouldn't be any wait time.",
     stack_badges: ['Nodejs', 'Express', 'Graphql', 'Heroku'],
-    img_project_overall: `${todoTemp}`,
+    img_project_overall: `${o1Todo}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
       'Since we worked on this code in small team we decided to go over coding process and logic by creating list of necessary logic and features with we will need for this project. Because if that we were able to speed up process of developing In this case we found the most difficult to work with JWT and creating process of authorisation and authentication. After doing some research we were able to pull and deliver this product.',
-    img_project_two: `${todoTemp}`,
+    img_project_two: `${p2Todo}`,
     header_lesson: 'Future Improvements',
     paragraph_lesson:
       'As a next step I see possibility to plug our ready backed to some frontend part of application to show real power and advance of our product'
@@ -314,7 +315,8 @@ export const projectsPage = [
     stack_badges: ['Vuejs', 'Sass', 'Netlify'],
     img_project_overall: `${o1Portfolio}`,
     header_problems: 'Thought Process and Encountered Problems',
-    paragraph_problems: '',
+    paragraph_problems:
+      'The biggest problem during process of creation of my portfolio was to make a correct, fresh design which will catch eye of the user. Therefore I decided to go with minimalism, and greys. Thank to that page looks sleek and neat.',
     img_project_two: `${p2Portfolio}`,
     header_lesson: 'Lesson Learned',
     paragraph_lesson:
@@ -323,7 +325,8 @@ export const projectsPage = [
   {
     name: '/projectRepack',
     header_main: 'RePack Battery Cloud',
-    paragraph: '',
+    paragraph:
+      'RePack Battery Cloud is a React application which control reusable battery packs, monitoring live data outsourced straight from batteries.',
     table: {
       type: 'Commercial',
       stack: [
@@ -336,21 +339,25 @@ export const projectsPage = [
         'Netlify'
       ],
       code: {
-        text: 'Repository',
-        link: ''
+        text: 'Ask for access',
+        link: 'mailto:ryjewski@gmail.com'
       },
       live: {
         text: 'Live view',
-        link: ''
+        link: 'https://repack-cloud.netlify.app/'
       }
     },
     img_project_one: `${p1Repack}`,
-    header_goal: '',
-    paragraph_goal_one: '',
-    paragraph_goal_two: '',
-    header_explanation: '',
-    paragraph_explanation_one: '',
-    paragraph_explanation_two: '',
+    header_goal: 'Project Goal and Purpose',
+    paragraph_goal_one:
+      'RePack develops technologies to extract maximum value from second life EV batteries by repurposing them in a streamlined, safe and cost-effective way. Over two weeks, we supported the startup with two weeks of one mob in order to develop a MVP of their Battery Cloud solution. ',
+    paragraph_goal_two:
+      'During my work I was responsible for the client’s overview panel based on raw data from the battery modules using React in front end and Chart.js to display the graph. On the backend Nodejs was used with Postgresql as the database management system. The panel includes real-time updates from the battery sensors, and displays the voltage, current and temperature for each individual system.',
+    header_explanation: 'Web Stack and Reasoning',
+    paragraph_explanation_one:
+      'Since we had to deal with structured data we decided to use PostgreSQL. This database is strictly recommended for project like ours. ',
+    paragraph_explanation_two:
+      'As a front end solution we decided to use React and Chart.js to display the graph.',
     stack_badges: [
       'ReactLogo',
       'Nodejs',
@@ -361,10 +368,12 @@ export const projectsPage = [
       'Heroku'
     ],
     img_project_overall: `${o1Repack}`,
-    header_problems: '',
-    paragraph_problems: '',
+    header_problems: 'Thought Process and Encountered Problems',
+    paragraph_problems:
+      'Our biggest problem on this assigment was to decide how our incoming data should looks like in database, like also what is the best way to model and store it. Gladly during the process of work we found the best solution for collecting data.',
     img_project_two: `${p2Repack}`,
-    header_lesson: '',
-    paragraph_lesson: ''
+    header_lesson: 'Future Improvements',
+    paragraph_lesson:
+      'Since final Mvp was basing on dummy data asa future improvements we see good opportunity to plug our database to app itself. Since App have an MVP status there is planned future development on it.'
   }
 ];

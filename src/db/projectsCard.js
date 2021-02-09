@@ -6,14 +6,13 @@ import novidPic from '../images/projects/Novid/pic_desktop_one.png';
 import ctgPic from '../images/projects/CareerToGo/pic_desktop_one.png';
 import algerioPic from '../images/projects/Algerio/pic_desktop_one.png';
 import portPic from '../images/projects/Porfolio/pic_desktop_one.png';
-// Todo replace placeholer
-import todoPic from '../images/projects/todo.png';
+import todoPic from '../images/projects/Todo/pic_desktop_one.png';
 
 export const projectsCard = [
   {
     header_main: 'AuraTattoo',
     desc:
-      'Commercial project for amazing Tattoo Shop based in center of Icelandic Capital - Reykjavik. ',
+      'Commercial project for amazing Tattoo Shop based in center of Icelandic Capital - Reykjavik.',
     link_text: 'Check Project',
     link: '/projectAura',
     img: `${auraPic}`
@@ -30,7 +29,7 @@ export const projectsCard = [
   {
     header_main: 'Novid',
     desc:
-      'Two-weeks full stack final project build at Salt. The purpose of app is tracing movement of employees in company.',
+      'Two-weeks full stack project build at Salt. The purpose of app is tracing movement of employees in company.',
     link_text: 'Check Project',
     link: '/projectNovid',
     img: `${novidPic}`
@@ -46,7 +45,7 @@ export const projectsCard = [
   {
     header_main: 'NTS-Radio Scrapper',
     desc:
-      'Hackathon project build around fully automated web scrapper and data aggregation',
+      'Hackathon project build around fully automated web scrapper and data aggregation.',
     link_text: 'Check Project',
     link: '/projectNTS',
     img: `${ntsPic}`

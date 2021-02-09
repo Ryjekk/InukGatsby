@@ -16,8 +16,8 @@ const Footer = () => {
       <Full>
         <Heading>Slide into my DM's!</Heading>
         <Paragraph>
-          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-          Ipsum Lorem Ipsum Lorem Ipsum Lorem
+          Feel free to reach out if you're looking for a developer, have a
+          question, or just want to say “hi” :)
         </Paragraph>
         <ContactLink href="mailto:ryjewski@gmail.com">Contact me</ContactLink>
         <FooterContent>

@@ -1,10 +1,10 @@
-import soon from '../images/todoFront.jpg';
+import soon from '../images/projects/soon.jpg';
 import saltWorkPic from '../images/workspace/salt.png';
 
 export const largeCard = [
   {
-    header_main: 'ToDo Front App',
-    desc: 'Frontend part of ToDo app, build in Gatsby.',
+    header_main: 'Typescript Project',
+    desc: 'My next project will be focused around Typescript.',
     link_text: 'Coming Soon',
     link: '/',
     img: `${soon}`
