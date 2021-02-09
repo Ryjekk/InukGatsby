@@ -1,7 +1,6 @@
 import React from 'react';
 // Context
 import { useDarkMode } from '../hooks/useDarkMode';
-import DataContextProvider from '../context/DataContext';
 // Styles
 import { ThemeProvider } from 'styled-components';
 import lightMode, { darkMode } from '../styles/themeContext';
@@ -13,18 +12,16 @@ const ProjectAura = () => {
   const [theme, bg, toggleTheme] = useDarkMode();
 
   return (
-    <DataContextProvider>
-      <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
-        <GlobalStyles />
-        <Layout
-          bg={bg}
-          theme={theme}
-          toggleTheme={toggleTheme}
-          contentType="project"
-          name="/projectAura"
-        />
-      </ThemeProvider>
-    </DataContextProvider>
+    <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
+      <GlobalStyles />
+      <Layout
+        bg={bg}
+        theme={theme}
+        toggleTheme={toggleTheme}
+        contentType="project"
+        name="/projectAura"
+      />
+    </ThemeProvider>
   );
 };
 

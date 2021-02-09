@@ -27,6 +27,19 @@ module.exports = {
         name: `db`,
         path: `${__dirname}/src/db`
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'InukRy - Software Developer',
+        short_name: 'Portfolio',
+        start_url: '/',
+        background_color: '#121212',
+        theme_color: '#eee',
+        display: 'browser',
+        icon: 'src/images/icons/logo/favicon-32x32.png',
+        crossOrigin: `use-credentials`
+      }
     }
   ]
 };
