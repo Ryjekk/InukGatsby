@@ -3,8 +3,9 @@ import saltWorkPic from '../images/workspace/Salt/pic_desktop_one.png';
 
 export const largeCard = [
   {
-    header_main: 'Typescript Project',
-    desc: 'My next project will be focused around Typescript.',
+    header_main: 'Aura e-commerce',
+    desc:
+      'My current work in progress is an e-commerce platform, that helps local shops to sell their goods.',
     link_text: 'Coming Soon',
     link: '/',
     img: `${soon}`
@@ -12,7 +13,7 @@ export const largeCard = [
   {
     header_main: 'Studying at Salt',
     desc:
-      'Read more about my amazing experience while studying at </Salt>! Amazing school for developers placed in Stockholm.',
+      'Read more about my amazing experience while studying at </Salt>! School for developers placed in Stockholm.',
     link: '/workSalt',
     link_text: `Read More ›`,
     img: `${saltWorkPic}`

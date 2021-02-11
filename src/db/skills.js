@@ -2,7 +2,9 @@ export const skills = [
   {
     header: 'My Skills',
     paragraph:
-      "Thanks to my previous work experience and studies at Salt, I've gained a solid understanding of computer science and software development concepts. On my free time I am trying to apply all of this concepts to real-world scenarios and application.",
+      "Thanks to my previous work experience and studies at Salt, I've gained a solid understanding of computer science and software development concepts.",
+    paragraph_two:
+      'In my free time, I am trying to apply all of these concepts to real-world scenarios and applications.',
     skills: {
       core: ['Html5', 'Css3', 'Javascript'],
       frontend: [

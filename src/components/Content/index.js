@@ -23,6 +23,7 @@ const Content = () => {
   const {
     header: headerSkill,
     paragraph: paragraphSkill,
+    paragraph_two: paragraphSkillTwo,
     skills: skill
   } = skills[0];
   const { main, projects, work } = welcome[0];
@@ -45,7 +46,7 @@ const Content = () => {
           }}
         >
           Hello, I'm <BorderSpan>Inuk</BorderSpan>. <br />
-          Software Developer, who will create your next dream product!
+          Let's build your dream app!
         </Heading>
       </Mid>
       <Full>
@@ -58,7 +59,11 @@ const Content = () => {
         />
       </Inner>
       <Inner style={themeColors}>
-        <Columns headingContent={headerSkill} leftContent={paragraphSkill} />
+        <Columns
+          headingContent={headerSkill}
+          leftContent={paragraphSkill}
+          leftContentTwo={paragraphSkillTwo}
+        />
         <Skills skills={skill} />
       </Inner>
       <Inner style={themeColors}>

@@ -6,7 +6,7 @@ export const workplaceCard = [
   {
     header_main: 'Working for RePack',
     desc:
-      'Read about my most recent experience as an developer at Repack, a company which want to change our life for better.',
+      'Read about my most recent experience as a developer at Repack, a company which want to change our life for better.',
     link: '/workRepack',
     link_text: 'Read More',
     img: `${repackWorkPic}`
@@ -14,7 +14,7 @@ export const workplaceCard = [
   {
     header_main: 'Working at CareerToGo',
     desc:
-      'Read about my adventure with guys from CareerToGo! Small startup which want to make revolution in job market in Copenhagen.',
+      'Read about my adventure with guys from CareerToGo! The small startup which wants to make a revolution on the job market in Copenhagen.',
     link: '/workCTG',
     link_text: 'Read More',
     img: `${ctgWorkPic}`

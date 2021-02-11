@@ -12,7 +12,7 @@ export const projectsCard = [
   {
     header_main: 'AuraTattoo',
     desc:
-      'Commercial project for amazing Tattoo Shop based in center of Icelandic Capital - Reykjavik.',
+      'Tattoo Shop web page, which can help to find and book the best tattoo artist from Reykjavik.',
     link_text: 'Check Project',
     link: '/projectAura',
     img: `${auraPic}`
@@ -20,7 +20,7 @@ export const projectsCard = [
   {
     header_main: 'RePack',
     desc:
-      'Commercial project for Norwegian company focused on reusable source of energy.',
+      'MVP built for Norwegian company focused on the reusable source of energy.',
     link_text: 'Check Project',
     link: '/projectRepack',
     img: `${repackPic}`
@@ -29,7 +29,7 @@ export const projectsCard = [
   {
     header_main: 'Novid',
     desc:
-      'Two-weeks full stack project build at Salt. The purpose of app is tracing movement of employees in company.',
+      'Two-week full-stack project build at Salt. The purpose of the app is to track the movement of employees in the company.',
     link_text: 'Check Project',
     link: '/projectNovid',
     img: `${novidPic}`
@@ -37,7 +37,7 @@ export const projectsCard = [
   {
     header_main: 'CareerToGo',
     desc:
-      'Commercial project for Danish startup. Job platform for youth, build with VueJS and NuxtJS.',
+      'MVP project built for Danish startup. Job platform for youth with job events, build with VueJS and NuxtJS.',
     link_text: 'Check Project',
     link: '/projectCTG',
     img: `${ctgPic}`
@@ -45,7 +45,7 @@ export const projectsCard = [
   {
     header_main: 'NTS-Radio Scrapper',
     desc:
-      'Hackathon project build around fully automated web scrapper and data aggregation.',
+      'Hackathon project built around fully automated web scraper and data aggregation.',
     link_text: 'Check Project',
     link: '/projectNTS',
     img: `${ntsPic}`
@@ -69,7 +69,7 @@ export const projectsCard = [
   {
     header_main: 'Algerio',
     desc:
-      'Interesting way for visual representation of sort algorithms, build with React and deployed on Netlify',
+      'Interesting way for the visual representation of sort algorithms, build with React and deployed on Netlify',
     link_text: 'Check Project',
     link: '/projectAlgerio',
     img: `${algerioPic}`
