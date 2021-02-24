@@ -19,6 +19,7 @@ import {
 } from '@styled-icons/boxicons-logos/';
 
 import {
+  Typescript,
   NextDotJs,
   Adobexd,
   Amazonaws,
@@ -62,6 +63,13 @@ export const perkCreator = (desc) =>
         return (
           <BoxCol key={el}>
             <Javascript style={{ width: '50px' }} />
+            <Paragraph>{el}</Paragraph>
+          </BoxCol>
+        );
+      case 'Typescript':
+        return (
+          <BoxCol key={el}>
+            <Typescript style={{ width: '50px', padding: '6px' }} />
             <Paragraph>{el}</Paragraph>
           </BoxCol>
         );

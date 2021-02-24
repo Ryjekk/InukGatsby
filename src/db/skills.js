@@ -6,7 +6,7 @@ export const skills = [
     paragraph_two:
       'In my free time, I am trying to apply all of these concepts to real-world scenarios and applications.',
     skills: {
-      core: ['Html5', 'Css3', 'Javascript'],
+      core: ['Html5', 'Css3', 'Javascript', 'Typescript'],
       frontend: [
         'ReactLogo',
         'Redux',
