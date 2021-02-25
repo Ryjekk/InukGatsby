@@ -37,6 +37,8 @@ import {
   Webpack,
   Mocha,
   Jest,
+  Strapi,
+  Contentful,
   Netlify,
   Heroku,
   Mysql
@@ -277,6 +279,20 @@ export const perkCreator = (desc) =>
           <BoxCol key={el}>
             <Amazonaws style={{ width: '50px' }} />
             <Paragraph>AWS</Paragraph>
+          </BoxCol>
+        );
+      case 'Strapi':
+        return (
+          <BoxCol key={el}>
+            <Strapi style={{ width: '50px' }} />
+            <Paragraph>{el}</Paragraph>
+          </BoxCol>
+        );
+      case 'Contentful':
+        return (
+          <BoxCol key={el}>
+            <Contentful style={{ width: '50px' }} />
+            <Paragraph>{el}</Paragraph>
           </BoxCol>
         );
       case 'Netlify':

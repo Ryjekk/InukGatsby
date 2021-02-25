@@ -38,6 +38,8 @@ export const skills = [
         'Webpack',
         'Firebase',
         'Amazonaws',
+        'Strapi',
+        'Contentful',
         'Netlify',
         'Heroku'
       ]

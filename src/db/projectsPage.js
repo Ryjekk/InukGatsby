@@ -34,7 +34,14 @@ export const projectsPage = [
       'AuraTattoo is a React Application, built for a tattoo studio based in Reykjavik Iceland. I built this project from scratch using React. This webpage should allows potential clients to view tattoo shop artist, their work like also allow them to make a quick booking for an appointment',
     table: {
       type: 'Commercial',
-      stack: ['React', 'Styled-components', 'MaterialUI', 'Netlify'],
+      stack: [
+        'React',
+        'GraphQL',
+        'Strapi',
+        'Styled-components',
+        'MaterialUI',
+        'Netlify'
+      ],
       code: {
         text: 'Repository',
         link: 'https://github.com/Ryjekk/Ethereal'
@@ -55,7 +62,14 @@ export const projectsPage = [
       "For this project I used React, but many different Javascript libraries could've been used, and even vanilla Javascript could have been easily implemented. I chose to use React because of its ease of use and the ability to smoothly manipulate states without having to re-render the pages.",
     paragraph_explanation_two:
       'In this project I also found out way to use EmailJS to provide smooth direct message system between Client and Aura Tattoo studio.',
-    stack_badges: ['ReactLogo', 'StyledComponents', 'MaterialUi', 'Netlify'],
+    stack_badges: [
+      'ReactLogo',
+      'Graphql',
+      'Strapi',
+      'StyledComponents',
+      'MaterialUi',
+      'Netlify'
+    ],
     img_project_overall: `${o1Aura}`,
     header_problems: 'Thought Process and Encountered Problems',
     paragraph_problems:
