@@ -36,6 +36,7 @@ export const projectsPage = [
       type: 'Commercial',
       stack: [
         'React',
+        'Mongodb',
         'GraphQL',
         'Strapi',
         'Styled-components',
@@ -64,6 +65,7 @@ export const projectsPage = [
       'In this project I also found out way to use EmailJS to provide smooth direct message system between Client and Aura Tattoo studio.',
     stack_badges: [
       'ReactLogo',
+      'Mongodb',
       'Graphql',
       'Strapi',
       'StyledComponents',
