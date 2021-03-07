@@ -6,6 +6,7 @@ export const WrapperContentCard = styled(WrapperContent)`
   margin: 50px 0;
   padding: 20px;
   border-radius: 10px;
+  // card BG TODO
   // background-image: ${({ theme }) => theme.gradient};
 
   @media (${QUERIES.large}) {
