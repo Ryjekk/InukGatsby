@@ -6,7 +6,7 @@ export const WrapperContentCard = styled(WrapperContent)`
   margin: 50px 0;
   padding: 20px;
   border-radius: 10px;
-  background-image: ${({ theme }) => theme.gradient};
+  // background-image: ${({ theme }) => theme.gradient};
 
   @media (${QUERIES.large}) {
     //align-items: flex-start;
