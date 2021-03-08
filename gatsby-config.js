@@ -1,9 +1,29 @@
 module.exports = {
   siteMetadata: {
     title: `InukRy - Software Developer`,
-    description: `Personal portfolio of Software Developer - Marcin Inuk Ryjewsky`,
+    description: `Personal portfolio of Software Developer - Marcin Inuk Ryjewsky. Fullstack Javascript Developer. Currently live in Norway, Oslo and Iceland, Reykjavik.`,
     author: `@ryjewsky`,
-    siteUrl: 'https://ryjewsky.netlify.app/'
+    siteUrl: 'https://ryjewsky.netlify.app/',
+    lang: 'en',
+    keywords: [
+      'React',
+      'Gatsby',
+      'Jamstack',
+      'Portfolio',
+      'Ryjewsky',
+      'Ryjewski',
+      'Javascript',
+      'Fullstack',
+      'Developer',
+      'Dev',
+      'Strapi',
+      'Netlify',
+      'Iceland',
+      'Reykjavik',
+      'Node',
+      'Norway',
+      'Oslo'
+    ]
   },
   plugins: [
     `gatsby-plugin-netlify`,
