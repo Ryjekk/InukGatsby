@@ -3,7 +3,7 @@ module.exports = {
     title: `InukRy - Software Developer`,
     description: `Personal portfolio of Software Developer - Marcin Inuk Ryjewsky. Fullstack Javascript Developer. Currently live in Norway, Oslo and Iceland, Reykjavik.`,
     author: `@ryjewsky`,
-    siteUrl: 'https://ryjewsky.netlify.app/',
+    siteUrl: 'https://www.ryjewsky.com/',
     lang: 'en',
     keywords: [
       'React',
