@@ -58,11 +58,9 @@ module.exports = {
         theme_color: '#eee',
         display: 'browser',
         icon: 'src/images/icons/logo/favicon-32x32.png',
-        icons: [
-          {
-            purpose: 'any maskable'
-          }
-        ],
+        icon_options: {
+          purpose: `maskable`
+        },
         crossOrigin: `use-credentials`
       }
     },
