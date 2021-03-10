@@ -21,7 +21,24 @@ const Seo = () => {
     `
   );
 
-  return <Helmet title={site.siteMetadata.title}></Helmet>;
+  const {
+    author,
+    description,
+    keywords,
+    siteUrl,
+    lang,
+    title
+  } = site.siteMetadata;
+
+  return (
+    <Helmet title={title} htmlAttributes={{ lang }}>
+      <meta name="description" content={description} />
+      <meta name="author" content={author} />
+      <meta name="keywords" content={keywords.join(',')} />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:title" content={title} />
+    </Helmet>
+  );
 };
 
 export default Seo;
