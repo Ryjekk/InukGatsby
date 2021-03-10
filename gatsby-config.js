@@ -33,7 +33,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -59,8 +58,14 @@ module.exports = {
         theme_color: '#eee',
         display: 'browser',
         icon: 'src/images/icons/logo/favicon-32x32.png',
+        icons: [
+          {
+            purpose: 'any maskable'
+          }
+        ],
         crossOrigin: `use-credentials`
       }
-    }
+    },
+    `gatsby-plugin-offline`
   ]
 };
