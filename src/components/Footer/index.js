@@ -23,7 +23,11 @@ const Footer = () => {
         <FooterContent>
           <FooterSocial>
             <Paragraph>
-              <SocialLink href="https://github.com/Ryjekk" target="_blank">
+              <SocialLink
+                href="https://github.com/Ryjekk"
+                target="_blank"
+                rel="noopener"
+              >
                 Github
               </SocialLink>
             </Paragraph>
@@ -31,6 +35,7 @@ const Footer = () => {
               <SocialLink
                 href="https://www.linkedin.com/in/ryjewski/"
                 target="_blank"
+                rel="noopener"
               >
                 LinkedIn
               </SocialLink>
@@ -39,6 +44,7 @@ const Footer = () => {
               <SocialLink
                 href="https://www.instagram.com/ryjewsky/"
                 target="_blank"
+                rel="noopener"
               >
                 Instagram
               </SocialLink>
