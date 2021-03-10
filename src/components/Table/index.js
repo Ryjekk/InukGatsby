@@ -19,7 +19,7 @@ const Table = ({ table }) => {
       <TableCell>
         <TableHeading>{headers[2]}</TableHeading>
         <Paragraph>
-          <TableLink href={table.code.link} target="_blank">
+          <TableLink href={table.code.link} rel="noopener" target="_blank">
             {table.code.text}
           </TableLink>
         </Paragraph>
@@ -27,7 +27,7 @@ const Table = ({ table }) => {
       <TableCell>
         <TableHeading>{headers[3]}</TableHeading>
         <Paragraph>
-          <TableLink href={table.live.link} target="_blank">
+          <TableLink href={table.live.link} rel="noopener" target="_blank">
             {table.live.text}
           </TableLink>
         </Paragraph>
